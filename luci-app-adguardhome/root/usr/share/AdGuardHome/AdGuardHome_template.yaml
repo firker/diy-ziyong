@@ -1,0 +1,253 @@
+#提交就可以直接用的配置模板文件
+#a template config can be use with a apply
+bind_host: 0.0.0.0
+bind_port: 3333
+users:
+- name: AdGuardHome
+  password: $2a$10$GWysh9ul8MSBzzzuLhjqtu6ZlFrq9aWRt9FYvUPXJd2cGvyGFB676
+http_proxy: ""
+language: zh-cn
+rlimit_nofile: 0
+debug_pprof: false
+web_session_ttl: 720
+dns:
+  bind_host: 0.0.0.0
+  port: 5333
+  statistics_interval: 1
+  querylog_enabled: true
+  querylog_interval: 90
+  querylog_size_memory: 1000
+  anonymize_client_ip: false
+  protection_enabled: true
+  blocking_mode: default
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 10
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: true
+  upstream_dns:
+  - tls://1dot1dot1dot1.cloudflare-dns.com
+  - tls://dns.google
+  - https://cloudflare-dns.com/dns-query
+  - https://1.0.0.1/dns-query
+  - https://dns.adgk.net:4433/dns-query
+  - https://esdns.kbsml.com/dns-query
+  - tcp://8.8.8.8
+  - tcp://8.8.4.4
+  - 223.5.5.5
+  - 223.6.6.6
+  - 208.67.222.222
+  - 114.114.114.114
+  - 180.76.76.76
+  bootstrap_dns:
+  - 8.8.4.4:53
+  - 1.0.0.1:53
+  all_servers: true
+  fastest_addr: false
+  allowed_clients: []
+  disallowed_clients:
+  - 192.168.1.200
+  blocked_hosts: []
+  cache_size: 4194304
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: true
+  edns_client_subnet: true
+  filtering_enabled: true
+  filters_update_interval: 24
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  rewrites: []
+  blocked_services: []
+tls:
+  enabled: false
+  server_name: ""
+  force_https: false
+  port_https: 443
+  port_dns_over_tls: 853
+  allow_unencrypted_doh: false
+  strict_sni_check: false
+  certificate_chain: ""
+  private_key: ""
+  certificate_path: ""
+  private_key_path: ""
+filters:
+- enabled: false
+  url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
+  name: adgk手机去广告规则
+  id: 1565484162
+- enabled: true
+  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
+  name: AAK-Cont Filter For AdBlock, Adblock Plus, etc
+  id: 1565484163
+- enabled: true
+  url: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
+  name: AakList (Anti-Adblock Killer)
+  id: 1565484164
+- enabled: true
+  url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
+  name: CJX's EasyList Lite
+  id: 1565484165
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+  name: EasyList China
+  id: 1565484166
+- enabled: true
+  url: https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt
+  name: adblock-youtube-ads
+  id: 1565484167
+- enabled: true
+  url: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext
+  name: Peter Lowe’s Ad and tracking server list​
+  id: 1565484168
+- enabled: true
+  url: https://easylist.to/easylist/fanboy-social.txt
+  name: Fanboy's Social Blocking List
+  id: 1565484169
+- enabled: true
+  url: https://easylist.to/easylist/fanboy-annoyance.txt
+  name: Fanboy's Annoyance List
+  id: 1565484170
+- enabled: true
+  url: https://secure.fanboy.co.nz/fanboy-cookiemonster.txt
+  name: EasyList Cookie List
+  id: 1565484171
+- enabled: true
+  url: https://fanboy.co.nz/fanboy-antifacebook.txt
+  name: Anti-Facebook List
+  id: 1565484172
+- enabled: true
+  url: https://filters.adtidy.org/extension/ublock/filters/14.txt
+  name: AdGuard Annoyances filter
+  id: 1565484173
+- enabled: true
+  url: https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt
+  name: Spam404
+  id: 1565484174
+- enabled: true
+  url: https://gitcdn.xyz/repo/NanoMeow/MDLMirror/master/hosts.txt
+  name: Malware Domain List
+  id: 1565484176
+- enabled: true
+  url: https://www.fanboy.co.nz/enhancedstats.txt
+  name: Fanboy's Enhanced Tracking List
+  id: 1565484178
+- enabled: true
+  url: https://easylist.to/easylist/easyprivacy.txt
+  name: EasyPrivacy
+  id: 1565484179
+- enabled: true
+  url: https://filters.adtidy.org/extension/ublock/filters/3.txt
+  name: AdGuard Tracking Protection filter
+  id: 1565484180
+- enabled: true
+  url: https://easylist.to/easylist/easylist.txt
+  name: EasyList
+  id: 1565484181
+- enabled: true
+  url: https://filters.adtidy.org/extension/ublock/filters/11.txt
+  name: AdGuard Mobile Ads filter
+  id: 1565484182
+- enabled: true
+  url: https://filters.adtidy.org/extension/ublock/filters/2_without_easylist.txt
+  name: AdGuard Base filter
+  id: 1565484183
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
+  name: Adblock Warning Removal List
+  id: 1565484184
+- enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard Simplified Domain Names filter
+  id: 1565484185
+- enabled: true
+  url: https://raw.githubusercontent.com/hopol/ChinaList2.0/master/ChinaList2.0.txt
+  name: ChinaListV2.0[20200217000]
+  id: 1565484186
+- enabled: true
+  url: https://fanboy.co.nz/fanboy-problematic-sites.txt
+  name: Fanboy's problematic-sites
+  id: 1565484187
+- enabled: true
+  url: http://sub.adtchrome.com/adt-chinalist-easylist.txt
+  name: ChinaList+EasyList(修正)
+  id: 1565484188
+- enabled: true
+  url: https://hosts.nfz.moe/127.0.0.1/full/hosts
+  name: NeoFelhz Hosts
+  id: 1565484189
+- enabled: true
+  url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt
+  name: Adbyby Lazy Rule
+  id: 1565484190
+- enabled: true
+  url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/video.txt
+  name: Adbyby Video Rule
+  id: 1565484191
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt
+  name: uBlock filters – Resource abuse
+  id: 1565486406
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+  name: uBlock filters
+  id: 1565486407
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt
+  name: uBlock filters – Badware risks
+  id: 1565486408
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/experimental.txt
+  name: uBlock filters – Experimental
+  id: 1565486409
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt
+  name: uBlock filters – Privacy
+  id: 1565486410
+- enabled: true
+  url: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+  name: uBlock filters -- Unbreak
+  id: 1565486411
+whitelist_filters: []
+user_rules:
+- '@@||jd.com^important'
+- '@@||flyme.cn^$important'
+- '@@||meizu.com^$important'
+- '@@||wl.jd.com^$important'
+- '@@||flydigi.com^'
+- =adunit&
+- '||doubleclick.net^'
+- '||flashtalking.com$domain=youtube.com'
+- '||googleadservices.com'
+- '||googlesyndication.com^'
+- '||s0.2mdn.net/ads'
+- '||www.google.*/pagead$domain=youtube.com'
+- '||www.youtube.com/[[computeEmptyGif_()]]$image'
+- '||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]'
+- '||www.youtube.com/api/stats'
+- '||www.youtube.com/pagead'
+- '||www.youtube.com/ptracking'
+dhcp:
+  enabled: false
+  interface_name: ""
+  gateway_ip: ""
+  subnet_mask: ""
+  range_start: ""
+  range_end: ""
+  lease_duration: 0
+  icmp_timeout_msec: 1000
+  icmp_timeout_msec: 1000
+clients: []
+log_file: ""
+verbose: false
+schema_version: 5
