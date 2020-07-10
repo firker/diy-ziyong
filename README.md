@@ -1,6 +1,6 @@
 diy-ziyong
 
-OpenClash：https://github.com/vernesong/OpenClash/tree/master
+OpenClash：https://github.com/vernesong/OpenClash
 
 holloword：https://github.com/fw876/helloworld
 
