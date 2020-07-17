@@ -235,7 +235,8 @@ user_rules:
 - '||www.youtube.com/api/stats'
 - '||www.youtube.com/pagead'
 - '||www.youtube.com/ptracking'
-- '@@||pv.sohu.com^$important
+- '@@||pv.sohu.com^$important'
+- ""
 dhcp:
   enabled: false
   interface_name: ""
