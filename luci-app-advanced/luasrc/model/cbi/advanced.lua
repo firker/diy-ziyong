@@ -108,6 +108,49 @@ e.remove("/tmp/firewall")
 end
 end
 end
+if nixio.fs.access("/etc/config/smartdns")then
+s:tab("smartdns",translate("配置smartdns"),translate("本页是配置/etc/config/smartdns的文档内容。应用保存后自动重启生效"))
+conf=s:taboption("smartdns",Value,"smartdns",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
+conf.template="cbi/tvalue"
+conf.rows=30
+conf.wrap="off"
+conf.cfgvalue=function(t,t)
+return e.readfile("/etc/config/smartdns")or""
+end
+conf.write=function(a,a,t)
+if t then
+t=t:gsub("\r\n?","\n")
+e.writefile("/tmp/smartdns",t)
+if(luci.sys.call("cmp -s /tmp/smartdns /etc/config/smartdns")==1)then
+e.writefile("/etc/config/smartdns",t)
+luci.sys.call("/etc/init.d/smartdns restart >/dev/null")
+end
+e.remove("/tmp/smartdns")
+end
+end
+end
+if nixio.fs.access("/etc/config/openclash")then
+s:tab("openclash",translate("配置openclash"),translate("本页是配置/etc/config/openclash的文档内容。应用保存后自动重启生效"))
+conf=s:taboption("openclash",Value,"openclash",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
+conf.template="cbi/tvalue"
+conf.rows=30
+conf.wrap="off"
+conf.cfgvalue=function(t,t)
+return e.readfile("/etc/config/openclash")or""
+end
+conf.write=function(a,a,t)
+if t then
+t=t:gsub("\r\n?","\n")
+e.writefile("/tmp/openclash",t)
+if(luci.sys.call("cmp -s /tmp/openclash /etc/config/openclash")==1)then
+e.writefile("/etc/config/openclash",t)
+luci.sys.call("/etc/init.d/openclash restart >/dev/null")
+end
+e.remove("/tmp/openclash")
+end
+end
+end
+
 if nixio.fs.access("/etc/pcap-dnsproxy/Config.conf")then
 s:tab("pcapconf",translate("配置pcap-dnsproxy"),translate("本页是配置/etc/pcap-dnsproxy/Config.conf的文档内容。应用保存后自动重启生效"))
 conf=s:taboption("pcapconf",Value,"pcapconf",nil,translate("开头的数字符号（＃）或分号的每一行（;）被视为注释；删除（;）启用指定选项。"))
