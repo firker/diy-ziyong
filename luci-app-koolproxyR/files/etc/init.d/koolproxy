@@ -219,14 +219,17 @@ load_rules() {
 			koolproxy.txt)
 				sed -i '5s/0/1/g' $KP_DIR/data/source.list
 			;;
-			daily.txt)
+                                                   mv.txt)
 				sed -i '6s/0/1/g' $KP_DIR/data/source.list
 			;;
-                                                   kp.dat)
+			daily.txt)
 				sed -i '7s/0/1/g' $KP_DIR/data/source.list
 			;;
-			user.txt)
+                                                   kp.dat)
 				sed -i '8s/0/1/g' $KP_DIR/data/source.list
+			;;
+			user.txt)
+				sed -i '9s/0/1/g' $KP_DIR/data/source.list
 			;;
 		esac
 	done
@@ -236,13 +239,13 @@ load_rules() {
 	do
 		case "$rule" in
 			easylistchina.txt)
-				sed -i '9s/0/1/g' $KP_DIR/data/source.list
-			;;
-			chengfeng.txt)
 				sed -i '10s/0/1/g' $KP_DIR/data/source.list
 			;;
-			fanboy.txt)
+			chengfeng.txt)
 				sed -i '11s/0/1/g' $KP_DIR/data/source.list
+			;;
+			fanboy.txt)
+				sed -i '12s/0/1/g' $KP_DIR/data/source.list
 			;;
 		esac
 	done
