@@ -196,7 +196,7 @@ filters:
   id: 1565484190
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt
-  name: cdn加速
+  name: 命中率第一
   id: 1565486407
 - enabled: true
   url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
