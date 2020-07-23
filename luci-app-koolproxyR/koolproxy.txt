@@ -1,5 +1,5 @@
 koolproxy插件/固件开发文档1.3
-更新日期：2017年7月7日（koolproxy 3.6.1）
+更新日期：2020年7月21日（koolproxy 3.8.5）
 
 ================================================================================================
 声明：
@@ -40,15 +40,15 @@ ADVANCED:
 #koolproxy部署文件目录参考1（使用openssl生成证书）
 .
 ├── data
-│   ├── gen_ca.sh				#证书生成脚本
-│   ├── koolproxy_ipset.conf		#ipset名单
-│   ├── openssl.cnf				#证书生成所用配置文件
-│   ├── rules					#规则存放文件夹
-│   │   ├── kp.dat				#视频规则
-│   │   ├── koolproxy.txt		#静态规则
-│   │   ├── daily.txt			#每日规则
-│   │   └── user.txt			#自定义规则
-│   └── version					#插件版本号(merlin)
+│   ├── gen_ca.sh				#证书生成脚本
+│   ├── koolproxy_ipset.conf		#ipset名单
+│   ├── openssl.cnf				#证书生成所用配置文件
+│   ├── rules					#规则存放文件夹
+│   │   ├── kp.dat				#视频规则
+│   │   ├── koolproxy.txt		#静态规则
+│   │   ├── daily.txt			#每日规则
+│   │   └── user.txt			#自定义规则
+│   └── version					#插件版本号(merlin)
 └── koolproxy					#koolproxy二进制(为了保证二进制顺利更新，请保证目录可写)
 
 1 证书生成使用命令 sh gen_ca.sh，该脚本会调用系统内的openssl来生成证书，运行成功后会自动创建data/private data/cert目录
