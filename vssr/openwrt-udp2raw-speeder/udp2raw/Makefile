@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udp2raw-tunnel
-PKG_VERSION:=20190716.test.0
+PKG_VERSION:=20200715.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
