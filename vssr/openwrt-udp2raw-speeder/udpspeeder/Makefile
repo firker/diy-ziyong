@@ -8,7 +8,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udpspeeder
-PKG_VERSION:=20200714.0
+PKG_VERSION:=20200714.0.conf
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
