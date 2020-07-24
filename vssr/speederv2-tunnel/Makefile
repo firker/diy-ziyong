@@ -4,10 +4,11 @@
 # This is free software, licensed under the GNU General Public License v3.
 #
 
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=speederv2-tunnel
-PKG_VERSION:=20200715.0
+PKG_VERSION:=20200714.0
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk

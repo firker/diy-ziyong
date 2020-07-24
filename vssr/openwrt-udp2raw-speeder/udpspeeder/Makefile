@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=udpspeeder
-PKG_VERSION:=20190121.0.conf
+PKG_VERSION:=20200714.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/zhfreal/UDPspeeder.git
-PKG_SOURCE_VERSION:=0fe8195e474014c29b66aedd096c0e1eefd77ed3
+
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 
@@ -44,8 +44,8 @@ MAKE_FLAGS += cross
 define Build/Prepare
 	$(PKG_UNPACK)
 	sed -i 's/cc_cross=.*/cc_cross=$(TARGET_CXX)/g' $(PKG_BUILD_DIR)/makefile
-	sed -i '/\gitversion/d' $(PKG_BUILD_DIR)/makefile
-	echo 'const char * const gitversion = "$(PKG_VERSION)";' > $(PKG_BUILD_DIR)/git_version.h
+	sed -i '/\*gitversion/d' $(PKG_BUILD_DIR)/makefile
+	echo 'const char *gitversion = "$(PKG_VERSION)";' > $(PKG_BUILD_DIR)/git_version.h
 	$(Build/Patch)
 endef
 
