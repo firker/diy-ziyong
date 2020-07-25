@@ -321,7 +321,7 @@ msgid "Running Status"
 msgstr "运行状态"
 
 msgid "vssr"
-msgstr "云梯"
+msgstr "hello word"
 
 msgid "Global Client"
 msgstr "TCP透明代理"
