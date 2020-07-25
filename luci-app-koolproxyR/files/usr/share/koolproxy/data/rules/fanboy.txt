@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: l9ns7SOdETtaw3OySjnNMQ
-! Version: 202007202351
+! Checksum: YqDdfnR23Xg0iUlCMu7gdg
+! Version: 202007242351
 ! Title: Fanboy's Annoyance List
-! Last modified: 20 Jul 2020 23:51 UTC
+! Last modified: 24 Jul 2020 23:51 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://easylist.to/
 ! License: http://creativecommons.org/licenses/by/3.0/
@@ -145,6 +145,7 @@
 ||https://getsmily.com^$third-party
 ||https://givealittle.co.nz/widget/$subdocument,third-party
 ||https://go.pardot.com^$subdocument,third-party
+||https://go.xhamsterlive.com/api/$third-party
 ||https://goemotify.com^$third-party
 ||https://google.com/uds/?file=orkut&
 ||https://goroost.com^$third-party
@@ -353,7 +354,6 @@
 ||https://tweetup.com^$third-party
 ||https://uatu.newsquestdigital.co.uk^$third-party
 ||https://upscri.be^$third-party
-||https://urbanairship.com^$third-party
 ||https://usefomo.com^$third-party
 ||https://userdatatrust.com^$third-party
 ||https://vhmengine.com^$third-party
@@ -422,7 +422,6 @@
 ||https://farteniuson.com^$third-party
 ||https://feedify.net^$third-party
 ||https://fernomius.com^$third-party
-||https://hitplus.net^$third-party
 ||https://ichecknotifyfriends.info^$third-party
 ||https://iopushtech.com^$third-party
 ||https://irpush.com^$third-party
@@ -437,10 +436,8 @@
 ||https://puscomosca.com^$third-party
 ||https://push-centr.com^$third-party
 ||https://push-centr.net^$third-party
-||https://push-money.ru^$third-party
 ||https://push-notifications.top^$third-party
 ||https://push-pro.net^$third-party
-||https://push.connect.digital^$third-party
 ||https://push.daksham.in^$third-party
 ||https://push.rent^$third-party
 ||https://push.rollout.io^$third-party
@@ -457,8 +454,6 @@
 ||https://pushcrew.com^$third-party
 ||https://pushe.co^$third-party
 ||https://pusherapp.com^$third-party
-||https://pushex.io^$third-party
-||https://pushify.com^$third-party
 ||https://pushiki.ru^$third-party
 ||https://pushinstruments.com^$third-party
 ||https://pushkahouse.com^$third-party
@@ -478,17 +473,12 @@
 ||https://pushstack.it^$third-party
 ||https://pushvip.ru^$third-party
 ||https://pushwhy.com^$third-party
-||https://pushwoosh.com^$third-party
 ||https://quarepush.com^$third-party
 ||https://quaruzon.com^$third-party
 ||https://realpush.media^$third-party
 ||https://realpush.network^$third-party
-||https://redpsh.pro^$third-party
 ||https://sckxppzdm.com^$third-party
-||https://sendmepush.com^$third-party
-||https://sendpulse.com^$third-party
 ||https://sendyourpush.com^$third-party
-||https://shroughtened.com^$third-party
 ||https://signaly.co^$third-party
 ||https://snrcdn.net^$third-party
 ||https://subscribers.com^$third-party
@@ -501,7 +491,6 @@
 ||https://wonderpush.com^$third-party
 ||https://worldpush.co^$third-party
 ||https://wpush.biz^$third-party
-||https://wwclicknews.club^$third-party
 ||https://accengage.net^$third-party
 ||https://actirinius.com^$third-party
 ||https://aimtell.com^$third-party
@@ -548,10 +537,18 @@
 ||https://push-house.net^$third-party
 ||https://pushalert.co^$third-party
 ||https://pushengage.com^$third-party
+||https://pushex.io^$third-party
+||https://pushify.com^$third-party
+||https://pushwoosh.com^$third-party
 ||https://reprocautious.com^$third-party
+||https://sendpulse.com^$third-party
+||https://shroughtened.com^$third-party
 ||https://snd.tc^$third-party
 ||https://truepush.com^$third-party
+||https://urbanairship.com^$third-party
 ||https://viapush.com^$third-party
+||https://wwclicknews.club^$third-party
+||https://wwclicktm.club^$third-party
 ||https://xtremepush.com^$third-party
 ||https://mobi24.net^$third-party
 ||https://addnow.com^$third-party
@@ -1487,6 +1484,7 @@
 ||http://getsmily.com^$third-party
 ||http://givealittle.co.nz/widget/$subdocument,third-party
 ||http://go.pardot.com^$subdocument,third-party
+||http://go.xhamsterlive.com/api/$third-party,domain=xhamster.com
 ||http://goemotify.com^$third-party
 ||http://google.com/uds/?file=orkut&
 ||http://goroost.com^$third-party
@@ -1697,7 +1695,6 @@
 ||http://tweetup.com^$third-party
 ||http://uatu.newsquestdigital.co.uk^$third-party
 ||http://upscri.be^$third-party
-||http://urbanairship.com^$third-party
 ||http://usefomo.com^$third-party
 ||http://userdatatrust.com^$third-party
 ||http://vhmengine.com^$third-party
@@ -1768,7 +1765,6 @@
 ||http://farteniuson.com^$third-party
 ||http://feedify.net^$third-party
 ||http://fernomius.com^$third-party
-||http://hitplus.net^$third-party
 ||http://ichecknotifyfriends.info^$third-party
 ||http://iopushtech.com^$third-party
 ||http://irpush.com^$third-party
@@ -1784,10 +1780,8 @@
 ||http://puscomosca.com^$third-party
 ||http://push-centr.com^$third-party
 ||http://push-centr.net^$third-party
-||http://push-money.ru^$third-party
 ||http://push-notifications.top^$third-party
 ||http://push-pro.net^$third-party
-||http://push.connect.digital^$third-party
 ||http://push.daksham.in^$third-party
 ||http://push.esputnik.com^
 ||http://push.rent^$third-party
@@ -1805,8 +1799,6 @@
 ||http://pushcrew.com^$third-party
 ||http://pushe.co^$third-party
 ||http://pusherapp.com^$third-party
-||http://pushex.io^$third-party
-||http://pushify.com^$third-party
 ||http://pushiki.ru^$third-party
 ||http://pushinstruments.com^$third-party
 ||http://pushkahouse.com^$third-party
@@ -1826,17 +1818,12 @@
 ||http://pushstack.it^$third-party
 ||http://pushvip.ru^$third-party
 ||http://pushwhy.com^$third-party
-||http://pushwoosh.com^$third-party
 ||http://quarepush.com^$third-party
 ||http://quaruzon.com^$third-party
 ||http://realpush.media^$third-party
 ||http://realpush.network^$third-party
-||http://redpsh.pro^$third-party
 ||http://sckxppzdm.com^$third-party
-||http://sendmepush.com^$third-party
-||http://sendpulse.com^$third-party
 ||http://sendyourpush.com^$third-party
-||http://shroughtened.com^$third-party
 ||http://signaly.co^$third-party
 ||http://snrcdn.net^$third-party
 ||http://subscribers.com^$third-party
@@ -1849,7 +1836,6 @@
 ||http://wonderpush.com^$third-party
 ||http://worldpush.co^$third-party
 ||http://wpush.biz^$third-party
-||http://wwclicknews.club^$third-party
 ||http://accengage.net^$third-party
 ||http://actirinius.com^$third-party
 ||http://aimtell.com^$third-party
@@ -1896,10 +1882,18 @@
 ||http://push-house.net^$third-party
 ||http://pushalert.co^$third-party
 ||http://pushengage.com^$third-party
+||http://pushex.io^$third-party
+||http://pushify.com^$third-party
+||http://pushwoosh.com^$third-party
 ||http://reprocautious.com^$third-party
+||http://sendpulse.com^$third-party
+||http://shroughtened.com^$third-party
 ||http://snd.tc^$third-party
 ||http://truepush.com^$third-party
+||http://urbanairship.com^$third-party
 ||http://viapush.com^$third-party
+||http://wwclicknews.club^$third-party
+||http://wwclicktm.club^$third-party
 ||http://xtremepush.com^$third-party
 ||http://mobi24.net^$third-party
 ||http://addnow.com^$third-party
@@ -5885,6 +5879,7 @@ https://prepperchimp.com##.widgetbox
 https://urgrove.com##.widgetized
 https://xhamster.com,xhamster.desi,xhamster.one##.wig-cams-widget
 https://xhamster.com,xhamster.desi,xhamster.one##.wig-spb
+https://xhamster.com##.wih-cams-thumb-widget
 https://xhamster.com,xhamster.desi,xhamster.one##.wih-cams-widget
 https://wildammo.com##.wild_ammo-tabs
 https://sharedir.com##.window
@@ -6639,6 +6634,7 @@ https://digg.com##.js--promo-bottom
 https://theguardian.com##.js-aside-slot-container
 https://indiatimes.com##.js-common-hook
 https://linuxjournal.com##.js-form-item-email
+https://gamespot.com##.js-nlsub
 https://highya.com##.js-swimingBlock-stoper
 https://itweb.co.za##.justify-center.full-width
 https://countrylife.co.uk##.keystone-newsletter-class
@@ -7298,8 +7294,10 @@ https://cbsnews.com,yelp.com###smart-banner
 https://dailymail.co.uk,m.jpost.com###smartBanner
 https://2br.co.uk,deviantart.com,dw.com,eurosport.com,nzherald.co.nz,photobucket.com,spiegel.de###smartbanner
 https://indianexpress.com##.app-btn
+https://sportskeeda.com##.app-download-modal
 https://9gag.com##.download-app-container
 https://9gag.com##.get-the-app-banner
+https://sportskeeda.com##.sidebar-app-download
 https://imgur.com,sowetanlive.co.za##.smartbanner
 https://schufa.de###AC_layout
 https://pcb.cc###Cntnr6
@@ -7809,7 +7807,7 @@ https://care2.com##.care2_side_float
 https://inquirer.net##.cct-socmed
 https://cambridge.org##.cdo-hdr__soc
 https://wsws.org##.censorship
-https://climate.nasa.gov##.chertools_floater
+https://nasa.gov##.chertools_floater
 https://progressive.org##.chicklets
 https://cheezburger.com##.chz-social
 https://omny.fm##.clip-share
@@ -8252,7 +8250,7 @@ https://artstation.com##.sh-buttons
 https://pixxxels.cc,postimg.cc##.sh-link
 https://dailysabah.com##.shB
 https://toothpastefordinner.com##.shadow[style="margin-top: 0px; width: 500px; height: 25px; background-color:#cccccc; padding-top: 1px;"]
-https://3net.com,500px.com,9gag.com,abc.net.au,about.com,acculturated.com,adsupplyads.com,al-shabaka.org,al.com,algemeiner.com,alibaba.com,askmen.com,astanatimes.com,autoblog.com,autoguide.com,autoline-eu.co.uk,autoline-eu.co.za,autoline-eu.ie,autoline-market.ca,autoline-market.com,autoline.info,bbc.co.uk,bbc.com,belfasttelegraph.co.uk,bing.com,bit-tech.net,blog.swiftkey.com,bloomberg.com,boredomtherapy.com,bossip.com,businessinsider.com,c-span.org,care2.com,cbsnews.com,cctv.com,celebrity.red,cgtn.com,ch-aviation.com,cheezburger.com,cinemablend.com,classicandsportscar.com,cncnews.cn,cnn.com,couriermail.com.au,cricket.com.au,crossmap.com,dailycaller.com,dailymail.co.uk,dailysabah.com,dailystar.co.uk,dailywire.com,dancestarparty.com,democracynow.org,devisesquare.com,digitallook.com,digitalrev.com,diningcity.co.za,diningcity.sg,dogandponyshowwebsite.com,donedeal.ie,drama.net,drinkaware.co.uk,drive-now.com,drive.com.au,dw.com,emigrate2.co.uk,empireonline.com,espnmediazone.com,eugenedailynews.com,euobserver.com,everybodydancegame.com,ew.com,famouslyfit.com,filecore.co.nz,fileshack.net,flowingdata.com,foodnetwork.com,football365.com,forward.com,forzaitalianfootball.com,foxnews.com,freespeech.org,freshtechweb.com,g4tv.com,galoremag.com,gamepro.com,gamingonlinux.com,gaytube.com,getdigital.co.uk,gettyimages.ae,gettyimages.ca,gettyimages.co.nz,gettyimages.co.uk,gettyimages.com,gettyimages.com.au,gettyimages.ie,gettyimages.in,gizmodo.com.au,goal.com,good.is,google.com,gospelherald.com,gossiponthis.com,gov.taipei,grifolsusa.com,gumtree.co.za,guyism.com,healthguru.com,heavytshirt.com,hotair.com,howstuffworks.com,html5rocks.com,hulu.com,hypetrak.com,hyundai.co.nz,ibtimes.co.in,ibtimes.co.uk,idigitaltimes.com,ifc.com,ijreview.com,imdb.com,imperialtoyota.co.za,independent.co.uk,independent.ie,india.com,indiatimes.com,infamousthegame.com,intego.com,intomobile.com,iono.fm,jumbosky.com,kbs.co.kr,kmfa.org,korea.net,kotaku.com.au,kqed.org,landrover-africa.com,landrover-me.com,landrover.ca,landrover.co.uk,landrover.co.za,landrover.com,landrover.com.au,landrover.gi,landrover.in,landroverusa.com,leadingcompany.com.au,lifehacker.com,maindevice.com,makeagif.com,mandatory.com,mediauk.com,meteoblue.com,milesplit.com,mobilespect.com,mozilla.org,mtv.com,my.com,myrecipes.com,nationalinterest.org,nationalreview.com,naughtydog.com,ncronline.org,neoplan.com,newartspower.hk,newegg.com,newrepublic.com,newsmaxtv.com,nickmom.com,nj.com,nola.com,novirusthanks.org,npr.org,nzherald.co.nz,omny.fm,onextrapixel.com,onthewire.io,openforum.com,opposingviews.com,paidcontent.org,parent24.com,pbs.org,pcmag.com,pcworld.com,people.com,petrolicious.com,planetrugby.com,planetware.com,playstation.com,pleaseshutup.com,politico.com,psfk.com,qz.com,rackspace.com,radiotoday.com.au,redbullcrashedice.com,reductress.com,rent-a-home.com.au,reuters.tv,rockstargames.com,sacbee.com,salon.com,scpr.org,segmentnext.com,shacknews.com,si.com,similarweb.com,singstar.com,ski.com.au,skype.com,slantmagazine.com,sltrib.com,snp.org,sonyliv.com,soulwire.co.uk,sourcefednews.com,spankbang.com,speakingtree.in,springer.com,sprintfeed.com,starbucks.com,stars-portraits.com,steampowered.com,suntimes.com,surfacemag.com,taiwantoday.tw,take40.com,teamtalk.com,technobuffalo.com,ted.com,thedailymeal.com,thefile.me,theglobaldispatch.com,thenational.ae,theringreport.com,thewindowsclub.com,timeline.com,timeslive.co.za,tomonews.net,tor.com,torontosun.com,total-croatia-news.com,tunein.com,tv.yahoo.com,tvnz.co.nz,twitchy.com,uanews.org,unhearit.com,usatoday.com,utoronto.ca,van.man,vanityfair.com,vectorstock.com,verisign.com,vh1.com,videocelts.com,videoweed.es,virtex.com,visiontimes.com,wanda-group.com,washingtonpost.com,watchcartoononline.com,wegotthiscovered.com,wheels24.co.za,winnipegfreepress.com,wired.co.uk,wmagazine.com,wrc.com,wsj.com,xda-developers.com,xhamster.com,xhamster.one,xxxymovies.com,yipit.com##.share
+https://3net.com,500px.com,9gag.com,abc.net.au,about.com,acculturated.com,adsupplyads.com,al-shabaka.org,al.com,algemeiner.com,alibaba.com,askmen.com,astanatimes.com,autoblog.com,autoguide.com,autoline-eu.co.uk,autoline-eu.co.za,autoline-eu.ie,autoline-market.ca,autoline-market.com,autoline.info,bbc.co.uk,bbc.com,belfasttelegraph.co.uk,bing.com,bit-tech.net,blog.swiftkey.com,bloomberg.com,boredomtherapy.com,bossip.com,businessinsider.com,c-span.org,care2.com,cbsnews.com,cctv.com,celebrity.red,cgtn.com,ch-aviation.com,cheezburger.com,cinemablend.com,classicandsportscar.com,cncnews.cn,cnn.com,couriermail.com.au,cricket.com.au,crossmap.com,dailycaller.com,dailymail.co.uk,dailysabah.com,dailystar.co.uk,dailywire.com,dancestarparty.com,democracynow.org,devisesquare.com,digitallook.com,digitalrev.com,diningcity.co.za,diningcity.sg,dogandponyshowwebsite.com,donedeal.ie,drama.net,drinkaware.co.uk,drive-now.com,drive.com.au,dw.com,emigrate2.co.uk,empireonline.com,espnmediazone.com,eugenedailynews.com,euobserver.com,everybodydancegame.com,ew.com,famouslyfit.com,filecore.co.nz,fileshack.net,flowingdata.com,foodnetwork.com,football365.com,forward.com,forzaitalianfootball.com,foxnews.com,freespeech.org,freshtechweb.com,g4tv.com,galoremag.com,gamepro.com,gamespot.com,gamingonlinux.com,gaytube.com,getdigital.co.uk,gettyimages.ae,gettyimages.ca,gettyimages.co.nz,gettyimages.co.uk,gettyimages.com,gettyimages.com.au,gettyimages.ie,gettyimages.in,gizmodo.com.au,goal.com,good.is,google.com,gospelherald.com,gossiponthis.com,gov.taipei,grifolsusa.com,gumtree.co.za,guyism.com,healthguru.com,heavytshirt.com,hotair.com,howstuffworks.com,html5rocks.com,hulu.com,hypetrak.com,hyundai.co.nz,ibtimes.co.in,ibtimes.co.uk,idigitaltimes.com,ifc.com,ijreview.com,imdb.com,imperialtoyota.co.za,independent.co.uk,independent.ie,india.com,indiatimes.com,infamousthegame.com,intego.com,intomobile.com,iono.fm,jumbosky.com,kbs.co.kr,kmfa.org,korea.net,kotaku.com.au,kqed.org,landrover-africa.com,landrover-me.com,landrover.ca,landrover.co.uk,landrover.co.za,landrover.com,landrover.com.au,landrover.gi,landrover.in,landroverusa.com,leadingcompany.com.au,lifehacker.com,maindevice.com,makeagif.com,mandatory.com,mediauk.com,meteoblue.com,milesplit.com,mobilespect.com,mozilla.org,mtv.com,my.com,myrecipes.com,nationalinterest.org,nationalreview.com,naughtydog.com,ncronline.org,neoplan.com,newartspower.hk,newegg.com,newrepublic.com,newsmaxtv.com,nickmom.com,nj.com,nola.com,novirusthanks.org,npr.org,nzherald.co.nz,omny.fm,onextrapixel.com,onthewire.io,openforum.com,opposingviews.com,paidcontent.org,parent24.com,pbs.org,pcmag.com,pcworld.com,people.com,petrolicious.com,planetrugby.com,planetware.com,playstation.com,pleaseshutup.com,politico.com,psfk.com,qz.com,rackspace.com,radiotoday.com.au,redbullcrashedice.com,reductress.com,rent-a-home.com.au,reuters.tv,rockstargames.com,sacbee.com,salon.com,scpr.org,segmentnext.com,shacknews.com,si.com,similarweb.com,singstar.com,ski.com.au,skype.com,slantmagazine.com,sltrib.com,snp.org,sonyliv.com,soulwire.co.uk,sourcefednews.com,spankbang.com,speakingtree.in,springer.com,sprintfeed.com,starbucks.com,stars-portraits.com,steampowered.com,suntimes.com,surfacemag.com,taiwantoday.tw,take40.com,teamtalk.com,technobuffalo.com,ted.com,thedailymeal.com,thefile.me,theglobaldispatch.com,thenational.ae,theringreport.com,thewindowsclub.com,timeline.com,timeslive.co.za,tomonews.net,tor.com,torontosun.com,total-croatia-news.com,tunein.com,tv.yahoo.com,tvnz.co.nz,twitchy.com,uanews.org,unhearit.com,usatoday.com,utoronto.ca,van.man,vanityfair.com,vectorstock.com,verisign.com,vh1.com,videocelts.com,videoweed.es,virtex.com,visiontimes.com,wanda-group.com,washingtonpost.com,watchcartoononline.com,wegotthiscovered.com,wheels24.co.za,winnipegfreepress.com,wired.co.uk,wmagazine.com,wrc.com,wsj.com,xda-developers.com,xhamster.com,xhamster.one,xxxymovies.com,yipit.com##.share
 https://ausdroid.net##.share-ausdroid
 https://tvline.com##.share-comment
 https://nymag.com##.share-link
@@ -8264,6 +8262,7 @@ https://vh1.com##.shareholder
 https://worldwideinterweb.com##.sharepoint
 https://ign.com,newsday.com##.sharer
 https://bulawayo24.com,foodbeast.com,glogster.com,good.is,hereisthecity.com,independent.co.uk,petapixel.com,trtworld.com,twistedfood.co.uk##.shares
+https://wizards.com##.sharing
 https://theregister.com##.sharing_widget
 https://recode.net##.shoutout
 https://nationalpost.com##.shr
@@ -10164,6 +10163,7 @@ https://tempi.it##.header_sidebar
 https://radioitaliaannisessanta.it##.hm_go_top
 https://ilmetapontino.it##.icon-caret-up
 https://francescocosta.net,wittgenstein.it##.ilpost-header
+https://astrooroscopo.it##.in
 https://condominio.com,libero.it,mondomobileweb.it##.ir-arriba
 https://bastabugie.it##.iscrizione
 https://sky.it##.j-navTop
@@ -10176,7 +10176,7 @@ https://spaziogames.it##.nav-reveal
 https://everyeye.it##.nav_articoli
 https://ilsitodellozoo.com##.navbar-alt
 https://laleggepertutti.it##.news-letter
-https://01net.it,advisoronline.it,aeroporto.net,basketinside.com,carpicalcionews.it,chiesadimilano.it,cittaceleste.it,condominioweb.com,corsedimoto.com,fantamagazine.com,fcinter1908.it,focusardegna.com,forzaroma.info,gazzamercato.it,giornaledibrescia.it,gogedizioni.it,golssip.it,guidafisco.it,ilfoglio.it,ilgiorno.it,ilmilanista.it,ilposticipo.it,ilrestodelcarlino.it,ilsecoloxix.it,ilsussidiario.net,itasportpress.it,juvenews.eu,lanazione.it,leitgamhof.com,lescienze.it,linkiesta.it,lintellettualedissidente.it,lvh.it,mediagol.it,mondoudinese.it,motorionline.com,numericalcio.it,padovasport.tv,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,quotidiano.net,rivistacontrasti.it,sassuolocalcionews.it,silicon.it,sportavellino.it,tenniscircus.com,theitaliantimes.it,toronews.net,tuttobolognaweb.it,valori.it,violanews.com##.newsletter
+https://01net.it,advisoronline.it,aeroporto.net,astrooroscopo.it,basketinside.com,carpicalcionews.it,chiesadimilano.it,cittaceleste.it,condominioweb.com,corsedimoto.com,fantamagazine.com,fcinter1908.it,focusardegna.com,forzaroma.info,gazzamercato.it,giornaledibrescia.it,gogedizioni.it,golssip.it,guidafisco.it,ilfoglio.it,ilgiorno.it,ilmilanista.it,ilposticipo.it,ilrestodelcarlino.it,ilsecoloxix.it,ilsussidiario.net,itasportpress.it,juvenews.eu,lanazione.it,leitgamhof.com,lescienze.it,linkiesta.it,lintellettualedissidente.it,lvh.it,mediagol.it,mondoudinese.it,motorionline.com,numericalcio.it,padovasport.tv,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,quotidiano.net,rivistacontrasti.it,sassuolocalcionews.it,silicon.it,sportavellino.it,tenniscircus.com,theitaliantimes.it,toronews.net,tuttobolognaweb.it,valori.it,violanews.com##.newsletter
 https://ravennanotizie.it##.newsletter-section
 https://starbene.it##.nlslim
 https://systems.bz##.on-top
@@ -10184,6 +10184,7 @@ https://blauerusa.com##.onTop
 https://ricoh.it##.page-link-top
 https://everyeye.it##.playert
 https://enzopennetta.it##.popmake
+https://astrooroscopo.it##.popup
 https://tvprato.it##.quinews-header
 https://storicang.it##.recibe
 https://giornalettismo.com##.related-article
@@ -10501,6 +10502,7 @@ https://n11.com##.warningAlert
 https://olx.ua###btn-top
 https://nbnews.com.ua###iosauth
 https://epochtimes.com.ua###scroll_house
+https://minfin.com.ua##.mail-subscribe-user
 https://novinite.bg###article_options
 https://armeniasputnik.am,blic.rs,rtvslo.si,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-news.ee,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt###share
 https://meteovista.si,tvsa.ba###social
@@ -11139,6 +11141,7 @@ https://cadenaser.com##.modulo_compartir
 https://de10.com.mx##.pane-rate-widgetk
 https://crea-mexico.com,futbol.com.uy,marca.com,montevideo.com.uy,mvsnoticias.com,pantallazo.com.uy,telesurtv.net##.redes
 https://cadenaser.com##.rrss
+https://aurora-israel.co.il##.rrss-link
 https://autoline-market.cl,autoline.bo,autoline.com.py,autoline.es,autoline.pe,clarin.com,elperiodico.cat,elperiodico.com,gettyimages.es,hispantv.com,lagranepoca.com,landrover.es,viveusa.mx##.share
 https://tn.com.ar##.shares
 https://20minutos.es,clarin.com,diarioti.com,estrellatv.com,europages.es,europapress.es,informador.mx,paginasamarillas.es,publico.es,todomercadoweb.es##.social
@@ -11289,7 +11292,7 @@ https://marktguru.de##.bottom-alert
 https://envivas.de##.box-hint-layer
 https://hey.car##.btDhtn
 https://gamblejoe.com##.c-area
-https://postbank.de##.c-notification
+https://karriere.de,postbank.de##.c-notification
 https://frankenmarkter.at##.c-window
 https://wetter.de##.c-wrapper
 https://bueromarkt-ag.de##.cCText
@@ -11312,6 +11315,7 @@ https://doctolib.de##.dl-drawer-bottom
 https://rtl-living.de,rtl.de,vox.de##.dnt__container
 https://i-dex.de,i-love-tec.de,moebel-und-garten.de##.dsgvo
 https://waff.at##.en-notification
+https://audi.de##.ensNotifyBannerWrapper
 https://fgh-info.de##.fade.alert-warning.alert
 https://speisebaron.de##.fixed-bottom.navbar
 https://bss-sichelstiel.de,smimea.info##.fixed-note
@@ -11850,6 +11854,7 @@ https://malpensabusiness.it###showMessage
 https://sky.it###soundbox_cookie
 https://digimobil.it###sticky-popup
 https://beniculturali.it,nlite.it,sigmastudio.it###system-message
+https://sia.eu###toast
 https://cippy.it###toast-container
 https://luxuryzone.it###top-notification-container
 https://scuolerimini.it###upper_div
@@ -11871,6 +11876,7 @@ https://bose.it##.bose-infoBar2016--fixedBottom
 https://elettrocasa.it,ntp-shop.it##.bottomBarMessage
 https://raikaritten.it##.bottom_note
 https://bolognafiere.com,bolognafiere.it##.box-alert
+https://sky.it##.c-banner-privacy
 https://infiniti.it##.c_128
 https://hyle.appspot.com##.cc
 https://regione.lombardia.it##.cdk-overlay-backdrop
@@ -12358,7 +12364,7 @@ https://landrover.ua##.notificationBars
 https://ua-football.com##.policy-mes
 https://kinoafisha.ua##.privacy-modal
 https://infiniti-vietnam.com.vn##.c_128
-https://360.cymru##.hero
+https://360.cymru###negesCaniatad
 https://nasa.gov#@##BackToTop
 https://billabong.com#@##NewsletterSignup
 https://autotrader.com,brydge.com,liputan6.com#@##back-to-top
@@ -13036,7 +13042,7 @@ https://lg.com#@#.cookie-check
 https://zwijsen.nl#@#.cookie-consent-container
 https://zwijsen.nl#@#.cookie-consent-content
 https://zwijsen.nl#@#.cookie-consent-wrapper
-https://codra.net#@#.cookie-consent:not(body)
+https://codra.net,dovoba.de#@#.cookie-consent:not(body)
 https://bokadirekt.se,danbolig.dk,hongkong.fi,rusta.com,xmradio.nl#@#.cookie-content
 https://danbolig.dk#@#.cookie-dialog
 https://ikks.com#@#.cookie-footer
@@ -13143,7 +13149,7 @@ https://spotify.com#@#.privacy-modal
 https://google.ac,google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,google.be,google.bf,google.bg,google.bi,google.bj,google.bs,google.bt,google.by,google.ca,google.cat,google.cd,google.cf,google.cg,google.ch,google.ci,google.cl,google.cm,google.co.ao,google.co.bw,google.co.ck,google.co.cr,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.ls,google.co.ma,google.co.mz,google.co.nz,google.co.th,google.co.tz,google.co.ug,google.co.uk,google.co.uz,google.co.ve,google.co.vi,google.co.za,google.co.zm,google.co.zw,google.com,google.com.af,google.com.ag,google.com.ai,google.com.ar,google.com.au,google.com.bd,google.com.bh,google.com.bn,google.com.bo,google.com.br,google.com.by,google.com.bz,google.com.cn,google.com.co,google.com.cu,google.com.cy,google.com.do,google.com.ec,google.com.eg,google.com.et,google.com.fj,google.com.gh,google.com.gi,google.com.gt,google.com.hk,google.com.jm,google.com.jo,google.com.kh,google.com.kw,google.com.lb,google.com.ly,google.com.mm,google.com.mt,google.com.mx,google.com.my,google.com.na,google.com.ng,google.com.ni,google.com.np,google.com.om,google.com.pa,google.com.pe,google.com.pg,google.com.ph,google.com.pk,google.com.pr,google.com.py,google.com.qa,google.com.ru,google.com.sa,google.com.sb,google.com.sg,google.com.sl,google.com.sv,google.com.tj,google.com.tn,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vc,google.com.ve,google.com.vn,google.cv,google.cz,google.de,google.dj,google.dk,google.dm,google.dz,google.ee,google.es,google.fi,google.fm,google.fr,google.ga,google.ge,google.gg,google.gl,google.gm,google.gp,google.gr,google.gy,google.hk,google.hn,google.hr,google.ht,google.hu,google.ie,google.im,google.iq,google.is,google.it,google.it.ao,google.je,google.jo,google.jp,google.kg,google.ki,google.kz,google.la,google.li,google.lk,google.lt,google.lu,google.lv,google.md,google.me,google.mg,google.mk,google.ml,google.mn,google.ms,google.mu,google.mv,google.mw,google.ne,google.ne.jp,google.ng,google.nl,google.no,google.nr,google.nu,google.pl,google.pn,google.ps,google.pt,google.ro,google.rs,google.ru,google.rw,google.sc,google.se,google.sh,google.si,google.sk,google.sm,google.sn,google.so,google.sr,google.st,google.td,google.tg,google.tl,google.tm,google.tn,google.to,google.tt,google.us,google.vg,google.vu,google.ws#@#.privacyBar
 https://metallica.com#@#.privacy_policy_message_box
 https://online.no,telenor.no#@#.privacy_prompt
-https://referencerecordings.com,studio100.it#@#.pum[data-popmake*="cookies"]
+https://referencerecordings.com,studio100.it,tko.pl#@#.pum[data-popmake*="cookies"]
 https://jyllands-posten.dk#@#.qc-cmp-showing
 https://jyllands-posten.dk#@#.qc-cmp-ui-container
 https://motofaktor.pl#@#.rodo-accept
@@ -13160,6 +13166,7 @@ https://atutszkola.pl,meethue.com,mydziewczyny.pl,philips-hue.com,philips.ae,phi
 https://mymuesli.com#@#cookies_consent
 https://litebit.eu#@#div[class*="CookieConsent"]
 https://ee.co.uk#@#div[class^="cookie-banner"]
+https://dovoba.de#@#div[class^="cookie-consent_"]
 https://birramenabrea.com,marketerplus.pl,myspeed.pl#@#div[data-cookie]
 https://timeout.com#@#div[data-module="cookie_banner"]
 https://konarzewski.com.pl,unicode.org#@#div[data-nconvert-cookie]
@@ -16286,6 +16293,7 @@ http://prepperchimp.com##.widgetbox
 http://urgrove.com##.widgetized
 http://xhamster.com,xhamster.desi,xhamster.one##.wig-cams-widget
 http://xhamster.com,xhamster.desi,xhamster.one##.wig-spb
+http://xhamster.com##.wih-cams-thumb-widget
 http://xhamster.com,xhamster.desi,xhamster.one##.wih-cams-widget
 http://wildammo.com##.wild_ammo-tabs
 http://sharedir.com##.window
@@ -17040,6 +17048,7 @@ http://digg.com##.js--promo-bottom
 http://theguardian.com##.js-aside-slot-container
 http://indiatimes.com##.js-common-hook
 http://linuxjournal.com##.js-form-item-email
+http://gamespot.com##.js-nlsub
 http://highya.com##.js-swimingBlock-stoper
 http://itweb.co.za##.justify-center.full-width
 http://countrylife.co.uk##.keystone-newsletter-class
@@ -17699,8 +17708,10 @@ http://cbsnews.com,yelp.com###smart-banner
 http://dailymail.co.uk,m.jpost.com###smartBanner
 http://2br.co.uk,deviantart.com,dw.com,eurosport.com,nzherald.co.nz,photobucket.com,spiegel.de###smartbanner
 http://indianexpress.com##.app-btn
+http://sportskeeda.com##.app-download-modal
 http://9gag.com##.download-app-container
 http://9gag.com##.get-the-app-banner
+http://sportskeeda.com##.sidebar-app-download
 http://imgur.com,sowetanlive.co.za##.smartbanner
 http://schufa.de###AC_layout
 http://pcb.cc###Cntnr6
@@ -18210,7 +18221,7 @@ http://care2.com##.care2_side_float
 http://inquirer.net##.cct-socmed
 http://cambridge.org##.cdo-hdr__soc
 http://wsws.org##.censorship
-http://climate.nasa.gov##.chertools_floater
+http://nasa.gov##.chertools_floater
 http://progressive.org##.chicklets
 http://cheezburger.com##.chz-social
 http://omny.fm##.clip-share
@@ -18653,7 +18664,7 @@ http://artstation.com##.sh-buttons
 http://pixxxels.cc,postimg.cc##.sh-link
 http://dailysabah.com##.shB
 http://toothpastefordinner.com##.shadow[style="margin-top: 0px; width: 500px; height: 25px; background-color:#cccccc; padding-top: 1px;"]
-http://3net.com,500px.com,9gag.com,abc.net.au,about.com,acculturated.com,adsupplyads.com,al-shabaka.org,al.com,algemeiner.com,alibaba.com,askmen.com,astanatimes.com,autoblog.com,autoguide.com,autoline-eu.co.uk,autoline-eu.co.za,autoline-eu.ie,autoline-market.ca,autoline-market.com,autoline.info,bbc.co.uk,bbc.com,belfasttelegraph.co.uk,bing.com,bit-tech.net,blog.swiftkey.com,bloomberg.com,boredomtherapy.com,bossip.com,businessinsider.com,c-span.org,care2.com,cbsnews.com,cctv.com,celebrity.red,cgtn.com,ch-aviation.com,cheezburger.com,cinemablend.com,classicandsportscar.com,cncnews.cn,cnn.com,couriermail.com.au,cricket.com.au,crossmap.com,dailycaller.com,dailymail.co.uk,dailysabah.com,dailystar.co.uk,dailywire.com,dancestarparty.com,democracynow.org,devisesquare.com,digitallook.com,digitalrev.com,diningcity.co.za,diningcity.sg,dogandponyshowwebsite.com,donedeal.ie,drama.net,drinkaware.co.uk,drive-now.com,drive.com.au,dw.com,emigrate2.co.uk,empireonline.com,espnmediazone.com,eugenedailynews.com,euobserver.com,everybodydancegame.com,ew.com,famouslyfit.com,filecore.co.nz,fileshack.net,flowingdata.com,foodnetwork.com,football365.com,forward.com,forzaitalianfootball.com,foxnews.com,freespeech.org,freshtechweb.com,g4tv.com,galoremag.com,gamepro.com,gamingonlinux.com,gaytube.com,getdigital.co.uk,gettyimages.ae,gettyimages.ca,gettyimages.co.nz,gettyimages.co.uk,gettyimages.com,gettyimages.com.au,gettyimages.ie,gettyimages.in,gizmodo.com.au,goal.com,good.is,google.com,gospelherald.com,gossiponthis.com,gov.taipei,grifolsusa.com,gumtree.co.za,guyism.com,healthguru.com,heavytshirt.com,hotair.com,howstuffworks.com,html5rocks.com,hulu.com,hypetrak.com,hyundai.co.nz,ibtimes.co.in,ibtimes.co.uk,idigitaltimes.com,ifc.com,ijreview.com,imdb.com,imperialtoyota.co.za,independent.co.uk,independent.ie,india.com,indiatimes.com,infamousthegame.com,intego.com,intomobile.com,iono.fm,jumbosky.com,kbs.co.kr,kmfa.org,korea.net,kotaku.com.au,kqed.org,landrover-africa.com,landrover-me.com,landrover.ca,landrover.co.uk,landrover.co.za,landrover.com,landrover.com.au,landrover.gi,landrover.in,landroverusa.com,leadingcompany.com.au,lifehacker.com,maindevice.com,makeagif.com,mandatory.com,mediauk.com,meteoblue.com,milesplit.com,mobilespect.com,mozilla.org,mtv.com,my.com,myrecipes.com,nationalinterest.org,nationalreview.com,naughtydog.com,ncronline.org,neoplan.com,newartspower.hk,newegg.com,newrepublic.com,newsmaxtv.com,nickmom.com,nj.com,nola.com,novirusthanks.org,npr.org,nzherald.co.nz,omny.fm,onextrapixel.com,onthewire.io,openforum.com,opposingviews.com,paidcontent.org,parent24.com,pbs.org,pcmag.com,pcworld.com,people.com,petrolicious.com,planetrugby.com,planetware.com,playstation.com,pleaseshutup.com,politico.com,psfk.com,qz.com,rackspace.com,radiotoday.com.au,redbullcrashedice.com,reductress.com,rent-a-home.com.au,reuters.tv,rockstargames.com,sacbee.com,salon.com,scpr.org,segmentnext.com,shacknews.com,si.com,similarweb.com,singstar.com,ski.com.au,skype.com,slantmagazine.com,sltrib.com,snp.org,sonyliv.com,soulwire.co.uk,sourcefednews.com,spankbang.com,speakingtree.in,springer.com,sprintfeed.com,starbucks.com,stars-portraits.com,steampowered.com,suntimes.com,surfacemag.com,taiwantoday.tw,take40.com,teamtalk.com,technobuffalo.com,ted.com,thedailymeal.com,thefile.me,theglobaldispatch.com,thenational.ae,theringreport.com,thewindowsclub.com,timeline.com,timeslive.co.za,tomonews.net,tor.com,torontosun.com,total-croatia-news.com,tunein.com,tv.yahoo.com,tvnz.co.nz,twitchy.com,uanews.org,unhearit.com,usatoday.com,utoronto.ca,van.man,vanityfair.com,vectorstock.com,verisign.com,vh1.com,videocelts.com,videoweed.es,virtex.com,visiontimes.com,wanda-group.com,washingtonpost.com,watchcartoononline.com,wegotthiscovered.com,wheels24.co.za,winnipegfreepress.com,wired.co.uk,wmagazine.com,wrc.com,wsj.com,xda-developers.com,xhamster.com,xhamster.one,xxxymovies.com,yipit.com##.share
+http://3net.com,500px.com,9gag.com,abc.net.au,about.com,acculturated.com,adsupplyads.com,al-shabaka.org,al.com,algemeiner.com,alibaba.com,askmen.com,astanatimes.com,autoblog.com,autoguide.com,autoline-eu.co.uk,autoline-eu.co.za,autoline-eu.ie,autoline-market.ca,autoline-market.com,autoline.info,bbc.co.uk,bbc.com,belfasttelegraph.co.uk,bing.com,bit-tech.net,blog.swiftkey.com,bloomberg.com,boredomtherapy.com,bossip.com,businessinsider.com,c-span.org,care2.com,cbsnews.com,cctv.com,celebrity.red,cgtn.com,ch-aviation.com,cheezburger.com,cinemablend.com,classicandsportscar.com,cncnews.cn,cnn.com,couriermail.com.au,cricket.com.au,crossmap.com,dailycaller.com,dailymail.co.uk,dailysabah.com,dailystar.co.uk,dailywire.com,dancestarparty.com,democracynow.org,devisesquare.com,digitallook.com,digitalrev.com,diningcity.co.za,diningcity.sg,dogandponyshowwebsite.com,donedeal.ie,drama.net,drinkaware.co.uk,drive-now.com,drive.com.au,dw.com,emigrate2.co.uk,empireonline.com,espnmediazone.com,eugenedailynews.com,euobserver.com,everybodydancegame.com,ew.com,famouslyfit.com,filecore.co.nz,fileshack.net,flowingdata.com,foodnetwork.com,football365.com,forward.com,forzaitalianfootball.com,foxnews.com,freespeech.org,freshtechweb.com,g4tv.com,galoremag.com,gamepro.com,gamespot.com,gamingonlinux.com,gaytube.com,getdigital.co.uk,gettyimages.ae,gettyimages.ca,gettyimages.co.nz,gettyimages.co.uk,gettyimages.com,gettyimages.com.au,gettyimages.ie,gettyimages.in,gizmodo.com.au,goal.com,good.is,google.com,gospelherald.com,gossiponthis.com,gov.taipei,grifolsusa.com,gumtree.co.za,guyism.com,healthguru.com,heavytshirt.com,hotair.com,howstuffworks.com,html5rocks.com,hulu.com,hypetrak.com,hyundai.co.nz,ibtimes.co.in,ibtimes.co.uk,idigitaltimes.com,ifc.com,ijreview.com,imdb.com,imperialtoyota.co.za,independent.co.uk,independent.ie,india.com,indiatimes.com,infamousthegame.com,intego.com,intomobile.com,iono.fm,jumbosky.com,kbs.co.kr,kmfa.org,korea.net,kotaku.com.au,kqed.org,landrover-africa.com,landrover-me.com,landrover.ca,landrover.co.uk,landrover.co.za,landrover.com,landrover.com.au,landrover.gi,landrover.in,landroverusa.com,leadingcompany.com.au,lifehacker.com,maindevice.com,makeagif.com,mandatory.com,mediauk.com,meteoblue.com,milesplit.com,mobilespect.com,mozilla.org,mtv.com,my.com,myrecipes.com,nationalinterest.org,nationalreview.com,naughtydog.com,ncronline.org,neoplan.com,newartspower.hk,newegg.com,newrepublic.com,newsmaxtv.com,nickmom.com,nj.com,nola.com,novirusthanks.org,npr.org,nzherald.co.nz,omny.fm,onextrapixel.com,onthewire.io,openforum.com,opposingviews.com,paidcontent.org,parent24.com,pbs.org,pcmag.com,pcworld.com,people.com,petrolicious.com,planetrugby.com,planetware.com,playstation.com,pleaseshutup.com,politico.com,psfk.com,qz.com,rackspace.com,radiotoday.com.au,redbullcrashedice.com,reductress.com,rent-a-home.com.au,reuters.tv,rockstargames.com,sacbee.com,salon.com,scpr.org,segmentnext.com,shacknews.com,si.com,similarweb.com,singstar.com,ski.com.au,skype.com,slantmagazine.com,sltrib.com,snp.org,sonyliv.com,soulwire.co.uk,sourcefednews.com,spankbang.com,speakingtree.in,springer.com,sprintfeed.com,starbucks.com,stars-portraits.com,steampowered.com,suntimes.com,surfacemag.com,taiwantoday.tw,take40.com,teamtalk.com,technobuffalo.com,ted.com,thedailymeal.com,thefile.me,theglobaldispatch.com,thenational.ae,theringreport.com,thewindowsclub.com,timeline.com,timeslive.co.za,tomonews.net,tor.com,torontosun.com,total-croatia-news.com,tunein.com,tv.yahoo.com,tvnz.co.nz,twitchy.com,uanews.org,unhearit.com,usatoday.com,utoronto.ca,van.man,vanityfair.com,vectorstock.com,verisign.com,vh1.com,videocelts.com,videoweed.es,virtex.com,visiontimes.com,wanda-group.com,washingtonpost.com,watchcartoononline.com,wegotthiscovered.com,wheels24.co.za,winnipegfreepress.com,wired.co.uk,wmagazine.com,wrc.com,wsj.com,xda-developers.com,xhamster.com,xhamster.one,xxxymovies.com,yipit.com##.share
 http://ausdroid.net##.share-ausdroid
 http://tvline.com##.share-comment
 http://nymag.com##.share-link
@@ -18665,6 +18676,7 @@ http://vh1.com##.shareholder
 http://worldwideinterweb.com##.sharepoint
 http://ign.com,newsday.com##.sharer
 http://bulawayo24.com,foodbeast.com,glogster.com,good.is,hereisthecity.com,independent.co.uk,petapixel.com,trtworld.com,twistedfood.co.uk##.shares
+http://wizards.com##.sharing
 http://theregister.com##.sharing_widget
 http://recode.net##.shoutout
 http://nationalpost.com##.shr
@@ -20566,6 +20578,7 @@ http://tempi.it##.header_sidebar
 http://radioitaliaannisessanta.it##.hm_go_top
 http://ilmetapontino.it##.icon-caret-up
 http://francescocosta.net,wittgenstein.it##.ilpost-header
+http://astrooroscopo.it##.in
 http://condominio.com,libero.it,mondomobileweb.it##.ir-arriba
 http://bastabugie.it##.iscrizione
 http://sky.it##.j-navTop
@@ -20578,7 +20591,7 @@ http://spaziogames.it##.nav-reveal
 http://everyeye.it##.nav_articoli
 http://ilsitodellozoo.com##.navbar-alt
 http://laleggepertutti.it##.news-letter
-http://01net.it,advisoronline.it,aeroporto.net,basketinside.com,carpicalcionews.it,chiesadimilano.it,cittaceleste.it,condominioweb.com,corsedimoto.com,fantamagazine.com,fcinter1908.it,focusardegna.com,forzaroma.info,gazzamercato.it,giornaledibrescia.it,gogedizioni.it,golssip.it,guidafisco.it,ilfoglio.it,ilgiorno.it,ilmilanista.it,ilposticipo.it,ilrestodelcarlino.it,ilsecoloxix.it,ilsussidiario.net,itasportpress.it,juvenews.eu,lanazione.it,leitgamhof.com,lescienze.it,linkiesta.it,lintellettualedissidente.it,lvh.it,mediagol.it,mondoudinese.it,motorionline.com,numericalcio.it,padovasport.tv,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,quotidiano.net,rivistacontrasti.it,sassuolocalcionews.it,silicon.it,sportavellino.it,tenniscircus.com,theitaliantimes.it,toronews.net,tuttobolognaweb.it,valori.it,violanews.com##.newsletter
+http://01net.it,advisoronline.it,aeroporto.net,astrooroscopo.it,basketinside.com,carpicalcionews.it,chiesadimilano.it,cittaceleste.it,condominioweb.com,corsedimoto.com,fantamagazine.com,fcinter1908.it,focusardegna.com,forzaroma.info,gazzamercato.it,giornaledibrescia.it,gogedizioni.it,golssip.it,guidafisco.it,ilfoglio.it,ilgiorno.it,ilmilanista.it,ilposticipo.it,ilrestodelcarlino.it,ilsecoloxix.it,ilsussidiario.net,itasportpress.it,juvenews.eu,lanazione.it,leitgamhof.com,lescienze.it,linkiesta.it,lintellettualedissidente.it,lvh.it,mediagol.it,mondoudinese.it,motorionline.com,numericalcio.it,padovasport.tv,passioneinter.com,pianetagenoa1893.net,pianetamilan.it,quotidiano.net,rivistacontrasti.it,sassuolocalcionews.it,silicon.it,sportavellino.it,tenniscircus.com,theitaliantimes.it,toronews.net,tuttobolognaweb.it,valori.it,violanews.com##.newsletter
 http://ravennanotizie.it##.newsletter-section
 http://starbene.it##.nlslim
 http://systems.bz##.on-top
@@ -20586,6 +20599,7 @@ http://blauerusa.com##.onTop
 http://ricoh.it##.page-link-top
 http://everyeye.it##.playert
 http://enzopennetta.it##.popmake
+http://astrooroscopo.it##.popup
 http://tvprato.it##.quinews-header
 http://storicang.it##.recibe
 http://giornalettismo.com##.related-article
@@ -20903,6 +20917,7 @@ http://n11.com##.warningAlert
 http://olx.ua###btn-top
 http://nbnews.com.ua###iosauth
 http://epochtimes.com.ua###scroll_house
+http://minfin.com.ua##.mail-subscribe-user
 http://novinite.bg###article_options
 http://armeniasputnik.am,blic.rs,rtvslo.si,sputnik-abkhazia.info,sputnik-georgia.com,sputnik-news.ee,sputnik-ossetia.com,sputnik-tj.com,sputnik.az,sputnik.by,sputnik.kg,sputniknews-uz.com,sputniknews.kz,sputniknews.lt###share
 http://meteovista.si,tvsa.ba###social
@@ -21542,6 +21557,7 @@ http://cadenaser.com##.modulo_compartir
 http://de10.com.mx##.pane-rate-widgetk
 http://crea-mexico.com,futbol.com.uy,marca.com,montevideo.com.uy,mvsnoticias.com,pantallazo.com.uy,telesurtv.net##.redes
 http://cadenaser.com##.rrss
+http://aurora-israel.co.il##.rrss-link
 http://autoline-market.cl,autoline.bo,autoline.com.py,autoline.es,autoline.pe,clarin.com,elperiodico.cat,elperiodico.com,gettyimages.es,hispantv.com,lagranepoca.com,landrover.es,viveusa.mx##.share
 http://tn.com.ar##.shares
 http://20minutos.es,clarin.com,diarioti.com,estrellatv.com,europages.es,europapress.es,informador.mx,paginasamarillas.es,publico.es,todomercadoweb.es##.social
@@ -21692,7 +21708,7 @@ http://marktguru.de##.bottom-alert
 http://envivas.de##.box-hint-layer
 http://hey.car##.btDhtn
 http://gamblejoe.com##.c-area
-http://postbank.de##.c-notification
+http://karriere.de,postbank.de##.c-notification
 http://frankenmarkter.at##.c-window
 http://wetter.de##.c-wrapper
 http://bueromarkt-ag.de##.cCText
@@ -21715,6 +21731,7 @@ http://doctolib.de##.dl-drawer-bottom
 http://rtl-living.de,rtl.de,vox.de##.dnt__container
 http://i-dex.de,i-love-tec.de,moebel-und-garten.de##.dsgvo
 http://waff.at##.en-notification
+http://audi.de##.ensNotifyBannerWrapper
 http://fgh-info.de##.fade.alert-warning.alert
 http://speisebaron.de##.fixed-bottom.navbar
 http://bss-sichelstiel.de,smimea.info##.fixed-note
@@ -22253,6 +22270,7 @@ http://malpensabusiness.it###showMessage
 http://sky.it###soundbox_cookie
 http://digimobil.it###sticky-popup
 http://beniculturali.it,nlite.it,sigmastudio.it###system-message
+http://sia.eu###toast
 http://cippy.it###toast-container
 http://luxuryzone.it###top-notification-container
 http://scuolerimini.it###upper_div
@@ -22274,6 +22292,7 @@ http://bose.it##.bose-infoBar2016--fixedBottom
 http://elettrocasa.it,ntp-shop.it##.bottomBarMessage
 http://raikaritten.it##.bottom_note
 http://bolognafiere.com,bolognafiere.it##.box-alert
+http://sky.it##.c-banner-privacy
 http://infiniti.it##.c_128
 http://hyle.appspot.com##.cc
 http://regione.lombardia.it##.cdk-overlay-backdrop
@@ -22761,7 +22780,7 @@ http://landrover.ua##.notificationBars
 http://ua-football.com##.policy-mes
 http://kinoafisha.ua##.privacy-modal
 http://infiniti-vietnam.com.vn##.c_128
-http://360.cymru##.hero
+http://360.cymru###negesCaniatad
 http://nasa.gov#@##BackToTop
 http://billabong.com#@##NewsletterSignup
 http://autotrader.com,brydge.com,liputan6.com#@##back-to-top
@@ -23439,7 +23458,7 @@ http://lg.com#@#.cookie-check
 http://zwijsen.nl#@#.cookie-consent-container
 http://zwijsen.nl#@#.cookie-consent-content
 http://zwijsen.nl#@#.cookie-consent-wrapper
-http://codra.net#@#.cookie-consent:not(body)
+http://codra.net,dovoba.de#@#.cookie-consent:not(body)
 http://bokadirekt.se,danbolig.dk,hongkong.fi,rusta.com,xmradio.nl#@#.cookie-content
 http://danbolig.dk#@#.cookie-dialog
 http://ikks.com#@#.cookie-footer
@@ -23546,7 +23565,7 @@ http://spotify.com#@#.privacy-modal
 http://google.ac,google.ad,google.ae,google.al,google.am,google.as,google.at,google.az,google.ba,google.be,google.bf,google.bg,google.bi,google.bj,google.bs,google.bt,google.by,google.ca,google.cat,google.cd,google.cf,google.cg,google.ch,google.ci,google.cl,google.cm,google.co.ao,google.co.bw,google.co.ck,google.co.cr,google.co.id,google.co.il,google.co.in,google.co.jp,google.co.ke,google.co.kr,google.co.ls,google.co.ma,google.co.mz,google.co.nz,google.co.th,google.co.tz,google.co.ug,google.co.uk,google.co.uz,google.co.ve,google.co.vi,google.co.za,google.co.zm,google.co.zw,google.com,google.com.af,google.com.ag,google.com.ai,google.com.ar,google.com.au,google.com.bd,google.com.bh,google.com.bn,google.com.bo,google.com.br,google.com.by,google.com.bz,google.com.cn,google.com.co,google.com.cu,google.com.cy,google.com.do,google.com.ec,google.com.eg,google.com.et,google.com.fj,google.com.gh,google.com.gi,google.com.gt,google.com.hk,google.com.jm,google.com.jo,google.com.kh,google.com.kw,google.com.lb,google.com.ly,google.com.mm,google.com.mt,google.com.mx,google.com.my,google.com.na,google.com.ng,google.com.ni,google.com.np,google.com.om,google.com.pa,google.com.pe,google.com.pg,google.com.ph,google.com.pk,google.com.pr,google.com.py,google.com.qa,google.com.ru,google.com.sa,google.com.sb,google.com.sg,google.com.sl,google.com.sv,google.com.tj,google.com.tn,google.com.tr,google.com.tw,google.com.ua,google.com.uy,google.com.vc,google.com.ve,google.com.vn,google.cv,google.cz,google.de,google.dj,google.dk,google.dm,google.dz,google.ee,google.es,google.fi,google.fm,google.fr,google.ga,google.ge,google.gg,google.gl,google.gm,google.gp,google.gr,google.gy,google.hk,google.hn,google.hr,google.ht,google.hu,google.ie,google.im,google.iq,google.is,google.it,google.it.ao,google.je,google.jo,google.jp,google.kg,google.ki,google.kz,google.la,google.li,google.lk,google.lt,google.lu,google.lv,google.md,google.me,google.mg,google.mk,google.ml,google.mn,google.ms,google.mu,google.mv,google.mw,google.ne,google.ne.jp,google.ng,google.nl,google.no,google.nr,google.nu,google.pl,google.pn,google.ps,google.pt,google.ro,google.rs,google.ru,google.rw,google.sc,google.se,google.sh,google.si,google.sk,google.sm,google.sn,google.so,google.sr,google.st,google.td,google.tg,google.tl,google.tm,google.tn,google.to,google.tt,google.us,google.vg,google.vu,google.ws#@#.privacyBar
 http://metallica.com#@#.privacy_policy_message_box
 http://online.no,telenor.no#@#.privacy_prompt
-http://referencerecordings.com,studio100.it#@#.pum[data-popmake*="cookies"]
+http://referencerecordings.com,studio100.it,tko.pl#@#.pum[data-popmake*="cookies"]
 http://jyllands-posten.dk#@#.qc-cmp-showing
 http://jyllands-posten.dk#@#.qc-cmp-ui-container
 http://motofaktor.pl#@#.rodo-accept
@@ -23563,6 +23582,7 @@ http://atutszkola.pl,meethue.com,mydziewczyny.pl,philips-hue.com,philips.ae,phil
 http://mymuesli.com#@#cookies_consent
 http://litebit.eu#@#div[class*="CookieConsent"]
 http://ee.co.uk#@#div[class^="cookie-banner"]
+http://dovoba.de#@#div[class^="cookie-consent_"]
 http://birramenabrea.com,marketerplus.pl,myspeed.pl#@#div[data-cookie]
 http://timeout.com#@#div[data-module="cookie_banner"]
 http://konarzewski.com.pl,unicode.org#@#div[data-nconvert-cookie]
