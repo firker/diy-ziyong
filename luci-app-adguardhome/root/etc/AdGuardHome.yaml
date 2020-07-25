@@ -46,7 +46,7 @@ dns:
   all_servers: true
   fastest_addr: false
   allowed_clients: []
-  disallowed_clients:[]
+  disallowed_clients: []
   blocked_hosts: []
   cache_size: 4194304
   cache_ttl_min: 0
