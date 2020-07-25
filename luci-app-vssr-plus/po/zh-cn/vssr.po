@@ -2,7 +2,7 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 msgid "Hello World"
-msgstr "云梯"
+msgstr "云梯加速器"
 
 
 msgid "Enable"
