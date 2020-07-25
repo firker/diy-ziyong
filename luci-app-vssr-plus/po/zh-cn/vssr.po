@@ -1,6 +1,9 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
+msgid "services"
+msgstr "服务"
+
 
 msgid "Enable"
 msgstr "启用"
@@ -318,7 +321,7 @@ msgid "Running Status"
 msgstr "运行状态"
 
 msgid "vssr"
-msgstr "Hello World"
+msgstr "云梯"
 
 msgid "Global Client"
 msgstr "TCP透明代理"
