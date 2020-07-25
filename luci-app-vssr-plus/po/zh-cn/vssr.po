@@ -1,8 +1,8 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
-msgid "services"
-msgstr "服务"
+msgid "Hello World"
+msgstr "云梯"
 
 
 msgid "Enable"
@@ -321,7 +321,7 @@ msgid "Running Status"
 msgstr "运行状态"
 
 msgid "vssr"
-msgstr "hello word"
+msgstr "Hello World"
 
 msgid "Global Client"
 msgstr "TCP透明代理"
@@ -791,7 +791,7 @@ msgid "Socket Connected"
 msgstr "连接测试"
 
 msgid "Hello World version update"
-msgstr "Hello World 版本更新"
+msgstr " 一键更新"
 
 msgid "update version"
 msgstr "更新版本"

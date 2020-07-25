@@ -77,7 +77,7 @@ sec.anonymous = true
 sec.addremove = true
 sec.sortable =  true
 sec.template = "cbi/tblsection"
-sec.extedit = luci.dispatcher.build_url("admin/services/vssr/server/%s")
+sec.extedit = luci.dispatcher.build_url("admin/vpn/vssr/server/%s")
 function sec.create(...)
 	local sid = TypedSection.create(...)
 	if sid then

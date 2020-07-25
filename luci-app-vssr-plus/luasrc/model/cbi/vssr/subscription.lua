@@ -67,7 +67,7 @@ o.inputtitle = translate("update version")
 o.inputstyle = "reload"
 o.write = function()
   luci.sys.call("bash /usr/share/vssr/up.sh >>/tmp/vssr.log 2>&1")
-  luci.http.redirect(luci.dispatcher.build_url("admin", "services", "vssr", "subscription"))
+  luci.http.redirect(luci.dispatcher.build_url("admin", "vpn", "vssr", "subscription"))
 end
 
 o = s:option(DummyValue, "", "")
@@ -87,7 +87,7 @@ uci:delete_all("vssr", "servers", function(s)
 end)
 uci:save("vssr")
 luci.sys.call("uci commit vssr && /etc/init.d/vssr stop")
-luci.http.redirect(luci.dispatcher.build_url("admin", "services", "vssr", "servers"))
+luci.http.redirect(luci.dispatcher.build_url("admin", "vpn", "vssr", "servers"))
 return
 end
 

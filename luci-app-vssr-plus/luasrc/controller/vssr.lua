@@ -8,39 +8,39 @@ function index()
 end
 
     if nixio.fs.access("/usr/bin/ssr-redir") then
-                  entry({"admin", "services"}, firstchild(), "services", 45).dependent = false
-                  entry({"admin", "services", "vssr"},alias("admin", "services", "vssr", "client"), _("Hello World"), 10).dependent=true
-                  entry({"admin", "services", "vssr", "client"}, cbi("vssr/client"), _("SSR Client"), 10).leaf=true
-                  entry({"admin", "services", "vssr", "servers"}, cbi("vssr/servers"),  _("Node List"), 20).leaf=true
-                  entry({"admin", "services", "vssr", "servers"}, arcombine(cbi("vssr/servers"), cbi("vssr/client-config")),  _("Node List"), 20).leaf =true
-                  entry({"admin", "services", "vssr", "subscription"},cbi("vssr/subscription"),_("Subscription"),30).leaf=true
-                  entry({"admin", "services", "vssr", "control"}, cbi("vssr/control"), _("Access Control"), 40).leaf=true
-                  entry({"admin", "services", "vssr", "servers-list"}, arcombine(cbi("vssr/servers-list"), cbi("vssr/client-config")),  _("Severs Nodes"), 50).leaf =true
-                  entry({"admin", "services", "vssr", "appointlist"},form("vssr/appointlist"),_("Appointlist List"),60).leaf =true
-                  entry({"admin", "services", "vssr", "udp2raw"},cbi("vssr/udp2raw"),_("udp2raw tunnel"),70).leaf = true
-                  entry({"admin", "services", "vssr", "advanced"}, cbi("vssr/advanced"),_("Advanced Settings"), 80).leaf =true
+                  entry({"admin", "vpn"}, firstchild(), "VPN", 45).dependent = false
+                  entry({"admin", "vpn", "vssr"},alias("admin", "vpn", "vssr", "client"), _("Hello World"), 10).dependent=true
+                  entry({"admin", "vpn", "vssr", "client"}, cbi("vssr/client"), _("SSR Client"), 10).leaf=true
+                  entry({"admin", "vpn", "vssr", "servers"}, cbi("vssr/servers"),  _("Node List"), 20).leaf=true
+                  entry({"admin", "vpn", "vssr", "servers"}, arcombine(cbi("vssr/servers"), cbi("vssr/client-config")),  _("Node List"), 20).leaf =true
+                  entry({"admin", "vpn", "vssr", "subscription"},cbi("vssr/subscription"),_("Subscription"),30).leaf=true
+                  entry({"admin", "vpn", "vssr", "control"}, cbi("vssr/control"), _("Access Control"), 40).leaf=true
+                  entry({"admin", "vpn", "vssr", "servers-list"}, arcombine(cbi("vssr/servers-list"), cbi("vssr/client-config")),  _("Severs Nodes"), 50).leaf =true
+                  entry({"admin", "vpn", "vssr", "appointlist"},form("vssr/appointlist"),_("Appointlist List"),60).leaf =true
+                  entry({"admin", "vpn", "vssr", "udp2raw"},cbi("vssr/udp2raw"),_("udp2raw tunnel"),70).leaf = true
+                  entry({"admin", "vpn", "vssr", "advanced"}, cbi("vssr/advanced"),_("Advanced Settings"), 80).leaf =true
                   elseif nixio.fs.access("/usr/bin/ssr-server") then
-                  entry({"admin", "services", "vssr"}, alias("admin", "services", "vssr", "server"), _("vssr"), 10).dependent =true
+                  entry({"admin", "vpn", "vssr"}, alias("admin", "vpn", "vssr", "server"), _("vssr"), 10).dependent =true
                   else
                         return
                   end
                   if nixio.fs.access("/usr/bin/ssr-server") then
-                  entry({"admin", "services", "vssr", "server"},arcombine(cbi("vssr/server"), cbi("vssr/server-config")),  _("SSR Server"), 85).leaf = true
+                  entry({"admin", "vpn", "vssr", "server"},arcombine(cbi("vssr/server"), cbi("vssr/server-config")),  _("SSR Server"), 85).leaf = true
                   end
-                  entry({"admin", "services", "vssr", "status"},form("vssr/status"),_("Status"), 90).leaf = true
-                  entry({"admin", "services", "vssr", "logview"}, cbi("vssr/logview", {hideapplybtn=true, hidesavebtn=true, hideresetbtn=true}), _("Log") ,100).leaf=true
-                  entry({"admin", "services", "vssr", "refresh"}, call("refresh_data"))
-                  entry({"admin", "services", "vssr", "checkport"}, call("check_port"))
-                  entry({"admin", "services", "vssr", "checkports"}, call("check_ports"))
-                  entry({"admin", "services", "vssr", "ping"}, call("act_ping")).leaf=true
-                  entry({"admin", "services", "vssr", "fileread"}, call("act_read"), nil).leaf=true
-                  entry({"admin", "services", "vssr", "switch"}, call("switch"))
-                  entry({"admin", "services", "vssr", "run"}, call("act_status"))
-                  entry({"admin", "services", "vssr", "change"}, call("change_node"))
-                  entry({"admin", "services", "vssr", "allserver"}, call("get_servers"))
-                  entry({"admin", "services", "vssr", "subscribe"}, call("get_subscribe"))
-                  entry({"admin", "services", "vssr", "flag"}, call("get_flag"))
-                  entry({"admin", "services", "vssr", "ip"}, call("check_ip"))
+                  entry({"admin", "vpn", "vssr", "status"},form("vssr/status"),_("Status"), 90).leaf = true
+                  entry({"admin", "vpn", "vssr", "logview"}, cbi("vssr/logview", {hideapplybtn=true, hidesavebtn=true, hideresetbtn=true}), _("Log") ,100).leaf=true
+                  entry({"admin", "vpn", "vssr", "refresh"}, call("refresh_data"))
+                  entry({"admin", "vpn", "vssr", "checkport"}, call("check_port"))
+                  entry({"admin", "vpn", "vssr", "checkports"}, call("check_ports"))
+                  entry({"admin", "vpn", "vssr", "ping"}, call("act_ping")).leaf=true
+                  entry({"admin", "vpn", "vssr", "fileread"}, call("act_read"), nil).leaf=true
+                  entry({"admin", "vpn", "vssr", "switch"}, call("switch"))
+                  entry({"admin", "vpn", "vssr", "run"}, call("act_status"))
+                  entry({"admin", "vpn", "vssr", "change"}, call("change_node"))
+                  entry({"admin", "vpn", "vssr", "allserver"}, call("get_servers"))
+                  entry({"admin", "vpn", "vssr", "subscribe"}, call("get_subscribe"))
+                  entry({"admin", "vpn", "vssr", "flag"}, call("get_flag"))
+                  entry({"admin", "vpn", "vssr", "ip"}, call("check_ip"))
 
     end
 

@@ -190,7 +190,7 @@
         const $$ = document;
 
         function get_state(){
-            $.get('<%=url([[admin]], [[services]], [[vssr]], [[run]])%>',
+            $.get('<%=url([[admin]], [[vpn]], [[vssr]], [[run]])%>',
             function (data) {
                 console.log(data);
             }, "json");
