@@ -103,7 +103,7 @@ local securitys = {
 
 m = Map(vssr, translate("Edit vssr Server"))
 
-m.redirect = luci.dispatcher.build_url("admin/vpn/vssr/server")
+m.redirect = luci.dispatcher.build_url("admin/services/vssr/server")
 if m.uci:get(vssr, sid) ~= "server_config" then
 	luci.http.redirect(m.redirect) 
 	return

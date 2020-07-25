@@ -90,9 +90,9 @@
 <script type="text/javascript">
     const CONFIG = '<%=self.config%>';
     const CURRENT = '<%=self.current%>';
-    const CHANGE_NODE_URL = '<%=luci.dispatcher.build_url("admin", "vpn", "vssr","change")%>';
-    const CHECK_PING_URL = '<%=luci.dispatcher.build_url("admin", "vpn", "vssr","checkport")%>';
-    const SWITCH_NODE_URL = '<%=luci.dispatcher.build_url("admin", "vpn", "vssr","switch")%>';
+    const CHANGE_NODE_URL = '<%=luci.dispatcher.build_url("admin", "services", "vssr","change")%>';
+    const CHECK_PING_URL = '<%=luci.dispatcher.build_url("admin", "services", "vssr","checkport")%>';
+    const SWITCH_NODE_URL = '<%=luci.dispatcher.build_url("admin", "services", "vssr","switch")%>';
 
     var servers = JSON.parse('<%= self.servers%>'.replace(/\t/g, ""));
     var ajaxArray = new Array();

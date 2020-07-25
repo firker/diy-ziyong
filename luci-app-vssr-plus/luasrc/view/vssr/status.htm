@@ -92,7 +92,7 @@ math.randomseed(os.time())
     <script>
         const VSSR_ASSETS = '/luci-static/vssr/';
         function get_state(){
-            $.get('<%=url([[admin]], [[vpn]], [[vssr]], [[run]])%>',
+            $.get('<%=url([[admin]], [[services]], [[vssr]], [[run]])%>',
             function (data) {
                 console.log(data);
             }, "json");

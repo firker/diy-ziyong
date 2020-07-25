@@ -162,7 +162,7 @@
 
 
 		//<![CDATA[
-    XHR.poll(5, '<%=url([[admin]], [[vpn]], [[vssr]], [[run]])%>', null,
+    XHR.poll(5, '<%=url([[admin]], [[services]], [[vssr]], [[run]])%>', null,
             function (x, data) {
                 if (data) {
 					document.getElementById('vssr_status').innerHTML = data.global?'<%:Client%><br><span class="green"><%:Running%>✔</span>':'<%:Client%><br><span class="red"><%:Not Running%>✘</span>';
