@@ -58,8 +58,7 @@ msgid "no config"
 msgstr "没有配置文件"
 msgid "no core"
 msgstr "没有核心"
-
-msgid "core error"
+msgid "Built-in core"
 msgstr "内置核心"
 #
 msgid "Redirect"
