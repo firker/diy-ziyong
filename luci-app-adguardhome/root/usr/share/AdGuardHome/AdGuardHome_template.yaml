@@ -1,6 +1,6 @@
 #提交就可以直接用的配置模板文件
 #a template config can be use with a apply
-bind_host: 0.0.0.0
+bbind_host: 0.0.0.0
 bind_port: 3333
 users:
 - name: AdGuardHome
@@ -15,6 +15,7 @@ dns:
   port: 5333
   statistics_interval: 1
   querylog_enabled: true
+  querylog_file_enabled: true
   querylog_interval: 90
   querylog_size_memory: 1000
   anonymize_client_ip: false
@@ -51,8 +52,8 @@ dns:
   disallowed_clients: []
   blocked_hosts: []
   cache_size: 4194304
-  cache_ttl_min: 0
-  cache_ttl_max: 0
+  cache_ttl_min: 60
+  cache_ttl_max: 86400
   bogus_nxdomain: []
   aaaa_disabled: false
   enable_dnssec: true
@@ -232,6 +233,11 @@ dhcp:
   lease_duration: 0
   icmp_timeout_msec: 1000
 clients: []
+log_compress: false
+log_localtime: false
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
 log_file: ""
 verbose: false
 schema_version: 6
