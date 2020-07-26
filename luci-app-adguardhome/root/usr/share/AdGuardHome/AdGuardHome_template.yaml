@@ -1,6 +1,6 @@
 #提交就可以直接用的配置模板文件
 #a template config can be use with a apply
-bbind_host: 0.0.0.0
+bind_host: 0.0.0.0
 bind_port: 3333
 users:
 - name: AdGuardHome
