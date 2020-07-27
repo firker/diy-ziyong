@@ -105,7 +105,7 @@ msgid "bin use less space,but may have compatibility issues"
 msgstr "减小执行文件空间占用，但是可能压缩后有兼容性问题"
 #
 msgid "Config Path"
-msgstr "配置文件路径，默认账号密码均为：AdGuardHome"
+msgstr "配置文件路径"
 
 msgid "AdGuardHome config path"
 msgstr "AdGuardHome 配置文件路径"
