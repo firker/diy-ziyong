@@ -8,7 +8,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=AdGuardHome
+PKG_NAME:=Openwrt-AdGuardHome
 PROJECT_NAME:=AdGuardHome
 PKG_VERSION:=v0.103.3
 PKG_RELEASE:=1
