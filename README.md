@@ -1,4 +1,5 @@
-diy-ziyong
+
+diy-openwort packages
 
 OpenClash：https://github.com/vernesong/OpenClash
 
@@ -13,3 +14,5 @@ passwall：https://github.com/Lienol/openwrt-package
 mypackages：https://github.com/siropboy/mypackages
 
 VSSR-jerryk https://github.com/jerrykuku/openwrt-package
+
+Thanks！
