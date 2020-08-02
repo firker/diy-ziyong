@@ -30,6 +30,8 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
+  - 218.30.19.50
+  - 61.134.1.5
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://dns.google
   - https://cloudflare-dns.com/dns-query
@@ -46,6 +48,7 @@ dns:
   bootstrap_dns:
   - 8.8.4.4:53
   - 1.0.0.1:53
+  - 114.114.114.114:53
   all_servers: true
   fastest_addr: false
   allowed_clients: []
@@ -55,7 +58,7 @@ dns:
   cache_ttl_min: 60
   cache_ttl_max: 86400
   bogus_nxdomain: []
-  aaaa_disabled: false
+  aaaa_disabled: true
   enable_dnssec: true
   edns_client_subnet: true
   filtering_enabled: true
