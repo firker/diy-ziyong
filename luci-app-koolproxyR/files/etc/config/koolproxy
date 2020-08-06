@@ -18,7 +18,7 @@ config rss_rule
 	option load '1'
 	option name 'adblock-youtube-ads'
 	option url 'https://raw.githubusercontent.com/firkerword/ADB/main/youtube.txt'
-	option file 'signed.txt'
+	option file 'youtube.txt'
 	option time '2020-06-20 23:32'
 
 config rss_rule
