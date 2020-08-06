@@ -46,7 +46,6 @@ dns:
   bootstrap_dns:
   - 8.8.4.4:53
   - 1.0.0.1:53
-  - 114.114.114.114:53
   all_servers: true
   fastest_addr: false
   allowed_clients: []
@@ -59,7 +58,7 @@ dns:
   aaaa_disabled: true
   enable_dnssec: true
   edns_client_subnet: true
-  filtering_enabled: true
+  filtering_enabled: false
   filters_update_interval: 24
   parental_enabled: false
   safesearch_enabled: false
@@ -210,18 +209,6 @@ user_rules:
 - '@@||meizu.com^$important'
 - '@@||wl.jd.com^$important'
 - '@@||flydigi.com^'
-- =adunit&
-- '||doubleclick.net^'
-- '||flashtalking.com$domain=youtube.com'
-- '||googleadservices.com'
-- '||googlesyndication.com^'
-- '||s0.2mdn.net/ads'
-- '||www.google.*/pagead$domain=youtube.com'
-- '||www.youtube.com/[[computeEmptyGif_()]]$image'
-- '||www.youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]'
-- '||www.youtube.com/api/stats'
-- '||www.youtube.com/pagead'
-- '||www.youtube.com/ptracking'
 - '@@||pv.sohu.com^$important'
 - ""
 dhcp:
