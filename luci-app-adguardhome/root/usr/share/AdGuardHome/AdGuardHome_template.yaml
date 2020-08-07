@@ -60,7 +60,7 @@ dns:
   aaaa_disabled: true
   enable_dnssec: true
   edns_client_subnet: true
-  filtering_enabled: false
+  filtering_enabled: true
   filters_update_interval: 24
   parental_enabled: false
   safesearch_enabled: false
@@ -88,17 +88,17 @@ filters:
   url: https://hblock.molinero.dev/hosts
   name: 主机列表
   id: 1565484161
-- enabled: false
-  url: https://gitee.com/banbendalao/adguard/raw/master/ADgk.txt
-  name: adgk手机去广告规则
+- enabled: true
+  url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
+  name: 乘风视频
   id: 1565484162
 - enabled: true
-  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
-  name: AAK-Cont Filter For AdBlock, Adblock Plus, etc
+  url: https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
+  name: Android的去广告规则
   id: 1565484163
 - enabled: true
-  url: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
-  name: AakList (Anti-Adblock Killer)
+  url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt
+  name: 命中率第一
   id: 1565484164
 - enabled: true
   url: https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt
@@ -137,8 +137,8 @@ filters:
   name: AdGuard Annoyances filter
   id: 1565484173
 - enabled: true
-  url: https://raw.githubusercontent.com/Spam404/lists/master/adblock-list.txt
-  name: Spam404
+  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
+  name:aak-cont-list-notubo
   id: 1565484174
 - enabled: true
   url: https://gitcdn.xyz/repo/NanoMeow/MDLMirror/master/hosts.txt
@@ -197,8 +197,8 @@ filters:
   name: Adbyby Lazy Rule
   id: 1565484190
 - enabled: true
-  url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt
-  name: 命中率第一
+  url: https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
+  name: AakList (Anti-Adblock Killer)
   id: 1565486407
 - enabled: true
   url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
