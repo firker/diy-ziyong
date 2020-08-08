@@ -137,10 +137,6 @@ filters:
   name: AdGuard Annoyances filter
   id: 1565484173
 - enabled: true
-  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
-  name:aak-cont-list-notubo
-  id: 1565484174
-- enabled: true
   url: https://gitcdn.xyz/repo/NanoMeow/MDLMirror/master/hosts.txt
   name: Malware Domain List
   id: 1565484176
@@ -204,6 +200,10 @@ filters:
   url: https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt
   name: hosts
   id: 1565486408
+- enabled: true
+  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
+  name: aak-cont-list-notubo
+  id: 1596855790
 whitelist_filters: []
 user_rules:
 - '@@||jd.com^important'
