@@ -57,18 +57,19 @@ check_proxy() {
 }
 
 test_proxy() {
-	local servername=$(uci_get_by_name $1 server)
+	local servername=$(get_host_ip $(uci_get_by_name $1 server))
 	local serverport=$(uci_get_by_name $1 server_port)
-	ret=$(tcpping -c 3 -p $serverport $servername | grep 'loss' | awk -F ',' '{ print $3 }' | awk -F "%" '{ print $1 }' | awk -F "." '{ print $1 }')
-	[ -z "$ret" ] && return 1
-	[ "$ret" -gt "50" ] && return 1
 	ipset add ss_spec_wan_ac $servername 2>/dev/null
-	ret=$?
+	ret1=$?
+	ret=$(tcping -q -c 3 -i 1 -t 2 -p $serverport $servername)
+	#echo "$(date "+%Y-%m-%d %H:%M:%S") test_proxy> name: $servername, ret1: $ret1, ret: $ret" >> /tmp/ssrplus.log
+	if [ "$ret" -gt "0" ]; then
+		[ "$ret1" == "0" ] && ipset del ss_spec_wan_ac $servername 2>/dev/null
+		return 1
+	fi
 	/usr/bin/ssr-check $servername $serverport $switch_time
 	local ret2=$?
-	if [ "$ret" == "0" ]; then
-		ipset del ss_spec_wan_ac $servername 2>/dev/null
-	fi
+	[ "$ret1" == "0" ] && ipset del ss_spec_wan_ac $servername 2>/dev/null
 	if [ "$ret2" == "0" ]; then
 		return 0
 	else
