@@ -33,7 +33,7 @@ endef
 define Download/lua534
 	FILE:=lua-5.3.4.tar.gz
 	URL:=https://www.lua.org/ftp/
-	HASH:=f681aa518233bc407e23acf0f5887c884f17436f000d453b2491a9f11a52400c
+	HASH:=eac0836eb7219e421a96b7ee3692b93f0629e4cdb0c788432e3d10ce9ed47e28
 endef
 
 define Build/Prepare
