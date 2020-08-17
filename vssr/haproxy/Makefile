@@ -31,7 +31,7 @@ define Package/haproxy/Default
 endef
 
 define Download/lua534
-	FILE:=lua-5.3.4.tar.gz
+	FILE:=lua-5.4.0.tar.gz
 	URL:=https://www.lua.org/ftp/
 	HASH:=eac0836eb7219e421a96b7ee3692b93f0629e4cdb0c788432e3d10ce9ed47e28
 endef
