@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=haproxy
-PKG_VERSION:=1.8.26
+PKG_VERSION:=2.2.2
 PKG_RELEASE:=01
 
 PKG_SOURCE:=haproxy-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://www.haproxy.org/download/1.8/src/
-PKG_HASH:=e3c2a81b6f26dcb736a34ebb5f134d3251ceccf30386214655fa7ed6d3afa400
+PKG_SOURCE_URL:=https://www.haproxy.org/download/2.2/src/
+PKG_HASH:=391c705a46c6208a63a67ea842c6600146ca24618531570c89c7915b0c6a54d6
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_LICENSE:=GPL-2.0
