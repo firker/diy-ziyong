@@ -4,7 +4,7 @@ config global
 	option startup_delay '5'
 	option koolproxy_ipv6 '0'
 	option koolproxy_mode '1'
-	option koolproxy_rules 'koolproxy.txt mv.txt daily.txt kp.dat user.txt'
+	option koolproxy_rules 'koolproxy.txt mv.txt daily.txt kp.dat'
 	option koolproxy_acl_default '0'
 	option time_update 'nil'
 	option enabled '0'
@@ -16,13 +16,8 @@ config rss_rules
 
 config rss_rule
 	option load '1'
-	option name 'adblock-youtube-ads'
-	option url 'https://raw.githubusercontent.com/firkerword/ADB/main/youtube.txt'
-	option file 'youtube.txt'
+	option name 'koolproxyR_rule'
+	option url 'https://raw.githubusercontent.com/user1121114685/koolproxyR_rule_list/master/kpr_our_rule.txt'
+	option file 'kpr_our_rule.txt'
 	option time '2020-06-20 23:32'
 
-config rss_rule
-	option name 'ChinaList2.0'
-	option url 'https://raw.githubusercontent.com/hopol/ChinaList2.0/master/ChinaList2.0.txt'
-	option file 'ChinaList2.0.txt'
-	option load '0'
