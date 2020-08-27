@@ -71,6 +71,7 @@ end
 
 if nixio.fs.access("/usr/bin/v2ray/v2ray") then
 o:value("v2ray", translate("V2Ray"))
+o:value("vless", translate("VLESS"))
 end
 o:value("ssr", translate("ShadowsocksR"))
 if nixio.fs.access("/usr/bin/ss-redir") then
@@ -184,6 +185,18 @@ o.rmempty = true
 o.default = uuid
 o:depends("type", "v2ray")
 
+-- VLESS Id
+o = s:option(Value, "vless_id", translate("VLESS Id (UUID)"))
+o.rmempty = true
+o.default = uuid
+o:depends("type", "vless")
+
+-- VLESS Encryption
+o = s:option(Value, "vless_encryption", translate("VLESS Encryption"))
+o.rmempty = true
+o.default = "none"
+o:depends("type", "vless")
+
 -- 加密方式
 o = s:option(ListValue, "security", translate("Encrypt Method"))
 for _, v in ipairs(securitys) do o:value(v, v:upper()) end
@@ -199,7 +212,7 @@ o:value("h2", "HTTP/2")
 o:value("quic", "QUIC")
 o.rmempty = true
 o:depends("type", "v2ray")
-
+o:depends("type", "vless")
 -- [[ TCP部分 ]]--
 
 -- TCP伪装
@@ -322,6 +335,7 @@ o.rmempty = true
 o = s:option(Flag, "insecure", translate("allowInsecure"))
 o.rmempty = true
 o:depends("type", "v2ray")
+o:depends("type", "vless")
 o:depends("type", "trojan")
 
 -- [[ TLS ]]--
@@ -329,6 +343,7 @@ o = s:option(Flag, "tls", translate("TLS"))
 o.rmempty = true
 o.default = "0"
 o:depends("type", "v2ray")
+o:depends("type", "vless")
 o:depends("type", "trojan")
 
 o = s:option(Value, "tls_host", translate("TLS Host"))
@@ -342,6 +357,7 @@ o = s:option(Flag, "mux", translate("Mux"))
 o.rmempty = true
 o.default = "0"
 o:depends("type", "v2ray")
+o:depends("type", "vless")
 o:depends("v2ray_plugin", "1")
 
 o = s:option(Value, "concurrency", translate("Concurrency"))

@@ -202,6 +202,9 @@ msgstr "密码"
 msgid "Encrypt Method"
 msgstr "加密方式"
 
+msgid "VLESS Encryption"
+msgstr "VLESS 加密"
+
 msgid "Protocol"
 msgstr "传输协议"
 
