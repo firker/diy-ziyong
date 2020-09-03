@@ -434,7 +434,7 @@ header > .container > .brand {
 }
 
 .brandMark:after {
-    content:"Â®";
+    content:"¢î";
     font-size:14px;
     font-family:Tahoma;
     position: absolute;
@@ -2145,6 +2145,16 @@ textarea.ddns_logview
 #_passwall_status_fieldset > div > div:nth-child(10) > div > div.pure-u-1-5 > div > img
 {
 	filter:invert(100%);
+}
+div#cbi-passwall.cbi-map fieldset > fieldset > div > div > div  label
+{
+	padding: 7px 10px;
+}
+
+div#cbi-passwall.cbi-map fieldset > fieldset > div > div > div  label input.cbi-input-checkbox
+{
+	vertical-align: top;
+	margin-top: 3px;
 }
 
 @media screen and (max-width: 1600px) {
