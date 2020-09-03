@@ -30,8 +30,6 @@ dns:
   ratelimit_whitelist: []
   refuse_any: true
   upstream_dns:
-  - 218.30.19.50
-  - 61.134.1.5
   - tls://1dot1dot1dot1.cloudflare-dns.com
   - tls://dns.google
   - https://cloudflare-dns.com/dns-query
@@ -40,6 +38,8 @@ dns:
   - https://esdns.kbsml.com/dns-query
   - tcp://8.8.8.8
   - tcp://8.8.4.4
+  - 117.50.11.11
+  - 117.50.22.22
   - 223.5.5.5
   - 223.6.6.6
   - 208.67.222.222
@@ -235,3 +235,4 @@ log_max_age: 3
 log_file: ""
 verbose: false
 schema_version: 6
+
