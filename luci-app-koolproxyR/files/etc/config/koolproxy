@@ -4,10 +4,10 @@ config global
 	option startup_delay '5'
 	option koolproxy_ipv6 '0'
 	option koolproxy_mode '1'
-	option koolproxy_rules 'koolproxy.txt mv.txt daily.txt kp.dat'
 	option koolproxy_acl_default '0'
 	option time_update 'nil'
-	option enabled '0'
+	option enabled '1'
+	option koolproxy_rules 'koolproxy.txt daily.txt kp.dat mv.txt'
 
 config rss_rules
 	option load '0'
@@ -19,5 +19,6 @@ config rss_rule
 	option name 'koolproxyR_rule'
 	option url 'https://raw.githubusercontent.com/user1121114685/koolproxyR_rule_list/master/kpr_our_rule.txt'
 	option file 'kpr_our_rule.txt'
-	option time '2020-06-20 23:32'
+	option time '2020-09-04 13:43'
+
 
