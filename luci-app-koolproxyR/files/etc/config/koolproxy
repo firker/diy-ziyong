@@ -6,7 +6,7 @@ config global
 	option koolproxy_mode '1'
 	option koolproxy_acl_default '0'
 	option time_update 'nil'
-	option enabled '1'
+	option enabled '0'
 	option koolproxy_rules 'koolproxy.txt daily.txt kp.dat mv.txt'
 
 config rss_rules

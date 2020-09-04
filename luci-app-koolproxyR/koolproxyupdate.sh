@@ -1,7 +1,7 @@
-wget 'https://raw.githubusercontent.com/firkerword/ADB/main/kp.dat' -O files/usr/share/koolproxy/data/rules/kp.dat
-wget 'https://raw.githubusercontent.com/firkerword/ADB/main/yhosts.txt' -O files/usr/share/koolproxy/data/rules/yhosts.txt
-wget 'https://raw.githubusercontent.com/firkerword/ADB/main/fanboy.txt' -O files/usr/share/koolproxy/data/rules/fanboy.txt
-wget 'https://raw.githubusercontent.com/firkerword/ADB/main/easylistchina.txt' -O files/usr/share/koolproxy/data/rules/easylistchina.txt
+wget 'https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat' -O files/usr/share/koolproxy/data/rules/kp.dat
+wget 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' -O files/usr/share/koolproxy/data/rules/yhosts.txt
+wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -O files/usr/share/koolproxy/data/rules/fanboy.txt
+wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/easylistchina.txt' -O files/usr/share/koolproxy/data/rules/easylistchina.txt
 wget 'https://gitee.com/xinggsf/Adblock-Rule/raw/main/mv.txt' -O files/usr/share/koolproxy/data/rules/mv.txt
 wget 'https://raw.githubusercontent.com/firkerword/ADB/main/user.txt' -O files/usr/share/koolproxy/data/user.txt
 cp files/usr/share/koolproxy/data/user.txt files/usr/share/koolproxy/data/rules/user.txt
