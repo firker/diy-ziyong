@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-koolproxyR
 PKG_VERSION:=3.8.5
-PKG_RELEASE:=2-20200903
+PKG_RELEASE:=3-20200903
 
 PKG_MAINTAINER:=panda-mute <wxuzju@gmail.com>
 PKG_LICENSE:=GPLv3
@@ -89,6 +89,9 @@ ifeq ($(ARCH),x86_64)
 endif
 ifeq ($(ARCH),arm)
 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
+endif
+ifeq ($(ARCH),aarch64)
+	$(INSTALL_BIN) ./files/bin/aarch64 $(1)/usr/share/koolproxy/koolproxy
 endif
 endef
 
