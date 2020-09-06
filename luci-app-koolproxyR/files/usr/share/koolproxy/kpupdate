@@ -113,7 +113,7 @@ update_rules() {
 	echo $(date "+%F %T"): ------------------- 内置规则更新 ------------------- >>$LOGFILE
 	         wget 'https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
                  wget 'https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
-                 wget 'https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
+                 wget 'https://raw.githubusercontent.com/firkerword/ADB/main/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
 	         wget 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
                  wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
 	         wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
