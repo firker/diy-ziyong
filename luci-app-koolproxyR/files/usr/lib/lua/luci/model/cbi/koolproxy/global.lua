@@ -27,12 +27,12 @@ local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
 if luci.sys.call("pidof koolproxy >/dev/null") == 0 then
-	status = translate("<strong><font color=\"green\">广告过滤大师 plus+  运行中</font></strong>")
+	status = translate("<strong><font color=\"green\">广告过滤大师 Plus+  运行中</font></strong>")
 else
-	status = translate("<strong><font color=\"red\">广告过滤大师 plus+  已停止</font></strong>")
+	status = translate("<strong><font color=\"red\">广告过滤大师 Plus+  已停止</font></strong>")
 end
 
-o = Map("koolproxy", "<font color='green'>" .. translate("广告过滤大师 plus+ ") .."</font>",     "<font color='purple'>" .. translate( "广告过滤大师 plus+是能识别adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告") .."</font>")
+o = Map("koolproxy", "<font color='green'>" .. translate("广告过滤大师 Plus+ ") .."</font>",     "<font color='purple'>" .. translate( "广告过滤大师 Plus+是能识别Adblock规则的广告屏蔽软件，可以过滤网页广告、视频广告、HTTPS广告") .."</font>")
 
 t = o:section(TypedSection, "global")
 t.anonymous = true
@@ -67,9 +67,9 @@ e = t:taboption("base", MultiValue, "koolproxy_rules", translate("内置规则")
 e.optional = false
 e.rmempty = false
 e:value("easylistchina.txt", translate("ABP规则"))
-e:value("fanboy.txt", translate("fanboy规则"))
-e:value("yhosts.txt", translate("yhosts规则"))
-e:value("AdGuardHome.txt", translate("AdG规则"))
+e:value("fanboy.txt", translate("Fanboy规则"))
+e:value("yhosts.txt", translate("Yhosts规则"))
+e:value("AdGuardHome.txt", translate("AdGuardHome规则"))
 e:value("koolproxy.txt", translate("静态规则"))
 e:value("daily.txt", translate("每日规则"))
 e:value("kp.dat", translate("视频规则"))
@@ -125,7 +125,7 @@ e.write = function()
 	luci.sys.call("/usr/share/koolproxy/kpupdate 2>&1 >/dev/null")
 	luci.http.redirect(luci.dispatcher.build_url("admin","services","koolproxy"))
 end
-e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />fanboy规则: %s条<br />yhosts规则: %s条<br />AdG规则: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />乘风视频: %s<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p,f,l,b,m,q,h, i))
+e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />AdGuardHome规则: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />乘风视频: %s<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p,f,l,b,m,q,h, i))
 t:tab("cert",translate("Certificate Management"))
 
 e=t:taboption("cert",DummyValue,"c1status",translate("<div align=\"left\">Certificate Restore</div>"))
@@ -323,9 +323,9 @@ e.width="20%"
 e.default=1
 e.rmempty=false
 e:value(0,translate("不过滤"))
-e:value(1,translate("http only"))
-e:value(2,translate("http + https"))
-e:value(3,translate("full port"))
+e:value(1,translate("过滤 HTTP"))
+e:value(2,translate("过滤HTTP + HTTPS"))
+e:value(3,translate("过滤全端口"))
 
 t=o:section(TypedSection,"rss_rule",translate("广告过滤规则订阅"), translate("请确保订阅规则的兼容性"))
 t.anonymous=true
