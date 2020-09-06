@@ -69,7 +69,7 @@ e.rmempty = false
 e:value("easylistchina.txt", translate("ABP规则"))
 e:value("fanboy.txt", translate("Fanboy规则"))
 e:value("yhosts.txt", translate("Yhosts规则"))
-e:value("AdGuardHome.txt", translate("AdGuardHome规则"))
+e:value("AdGuardHome.txt", translate("anti-AD规则"))
 e:value("koolproxy.txt", translate("静态规则"))
 e:value("daily.txt", translate("每日规则"))
 e:value("kp.dat", translate("视频规则"))
