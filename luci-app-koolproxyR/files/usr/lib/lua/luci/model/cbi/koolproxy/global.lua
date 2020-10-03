@@ -49,7 +49,7 @@ e.value = string.format("[ %s ]", v)
 
 e = t:taboption("base", Value, "startup_delay", translate("启动延迟"))
 e:value(0, translate("不启用"))
-for _, v in ipairs({5, 10, 15, 25, 40,60}) do
+for _, v in ipairs({5, 10, 15, 25, 40, 60}) do
 	e:value(v, translate("%u 秒") %{v})
 end
 e.datatype = "uinteger"
