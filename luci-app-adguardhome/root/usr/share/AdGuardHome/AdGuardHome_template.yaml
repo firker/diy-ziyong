@@ -177,10 +177,6 @@ filters:
   name: ChinaList+EasyList(修正)
   id: 1565484188
 - enabled: true
-  url: https://hosts.nfz.moe/127.0.0.1/full/hosts
-  name: NeoFelhz Hosts
-  id: 1565484189
-- enabled: true
   url: https://raw.githubusercontent.com/adbyby/xwhyc-rules/master/lazy.txt
   name: Adbyby Lazy Rule
   id: 1565484190
@@ -204,6 +200,10 @@ filters:
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风规则
   id: 1597894589
+- enabled: true
+  url: https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
+  name: Neodev Pro
+  id: 1601856945
 whitelist_filters: []
 user_rules:
 - '@@||jd.com^important'
@@ -217,6 +217,7 @@ user_rules:
 - '||google.com/pagead/'
 - '||static.doubleclick.net^$domain=youtube.com'
 - '||youtube.com/get_midroll_'
+- ""
 dhcp:
   enabled: false
   interface_name: ""
@@ -235,4 +236,3 @@ log_max_age: 3
 log_file: ""
 verbose: false
 schema_version: 6
-
