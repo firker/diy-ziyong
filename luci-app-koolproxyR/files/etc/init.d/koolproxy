@@ -260,13 +260,13 @@ get_mode_name() {
 			echo "不过滤"
 		;;
 		1)
-			echo "http模式"
+			echo "过滤 HTTP"
 		;;
 		2)
-			echo "http + https"
+			echo "过滤HTTP + HTTPS"
 		;;
 		3)
-			echo "full port"
+			echo "过滤全端口"
 		;;
 	esac
 }
