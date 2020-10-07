@@ -110,16 +110,16 @@ update_rss_rules() {
 
 	
 update_rules() {
-	echo $(date "+%F %T"): ------------------- 内置规则更新 ------------------- >>$LOGFILE
+		 echo $(date "+%F %T"): ------------------- 内置规则更新 ------------------- >>$LOGFILE
 	         wget 'https://raw.githubusercontent.com/houzi-/CDN/master/kp.dat' -q -O $KP_DIR/data/rules/kp.dat
-             wget 'https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
-             wget 'https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
+            	 wget 'https://raw.githubusercontent.com/houzi-/CDN/master/daily.txt' -q -O $KP_DIR/data/rules/daily.txt
+		 wget 'https://raw.githubusercontent.com/houzi-/CDN/master/koolproxy.txt' -q -O $KP_DIR/data/rules/koolproxy.txt
 	         wget 'https://raw.githubusercontent.com/VeleSila/yhosts/master/hosts.txt' -q -O $KP_DIR/data/rules/yhosts.txt
-             wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
+            	 wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/fanboy.txt' -q -O $KP_DIR/data/rules/fanboy.txt
 	         wget 'https://raw.githubusercontent.com/ycg31/KoolProxy/master/rules/easylistchina.txt' -q -O $KP_DIR/data/rules/easylistchina.txt
-             wget 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf' -q -O $KP_DIR/data/rules/anti-ad.txt
-			 wget 'https://raw.githubusercontent.com/neodevpro/neodevhost/master/host_dnsmasq.conf' -q -O $KP_DIR/data/rules/neodevhost.txt
-             wget 'https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
+		 wget 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/adblock-for-dnsmasq.conf' -q -O $KP_DIR/data/rules/anti-ad.txt
+		 wget 'https://raw.githubusercontent.com/neodevpro/neodevhost/master/host_dnsmasq.conf' -q -O $KP_DIR/data/rules/neodevhost.txt
+            	 wget 'https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt' -q -O $KP_DIR/data/rules/mv.txt
 	         wget 'https://raw.githubusercontent.com/firkerword/ADB/main/koolproxy_ipset.conf' -q -O $KP_DIR/koolproxy_ipset.conf
                  easylist_rules_local=`cat /usr/share/koolproxy/data/rules/easylistchina.txt  | sed -n '3p'|awk '{print $3,$4}'`
                  fanboy_rules_local=`cat /usr/share/koolproxy/data/rules/fanboy.txt  | sed -n '3p'|awk '{print $3,$4}'`
@@ -128,12 +128,12 @@ update_rules() {
                  echo $(date "+%F %T"): -------------------easylist version $easylist_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): -------------------fanboy   version $fanboy_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): -------------------yhosts   version $yhosts_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------anti-ad   version $anti-ad_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------neodevhost   version $neodevhost_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------koolproxy   version $koolproxy_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------daily   version $daily_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------kp   version $kp_rules_local >>$LOGFILE
-				 echo $(date "+%F %T"): -------------------mv   version $mv_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------anti-ad   version $anti-ad_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------neodevhost   version $neodevhost_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------koolproxy   version $koolproxy_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------daily   version $daily_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------kp   version $kp_rules_local >>$LOGFILE
+		 echo $(date "+%F %T"): -------------------mv   version $mv_rules_local >>$LOGFILE
                  echo $(date "+%F %T"): ------------------- 内置规则更新成功！ ------------------- >>$LOGFILE
                 RESTART_KOOLPROXY=true
 
