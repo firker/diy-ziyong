@@ -19,7 +19,7 @@ msgid "Open v2ray split-flow"
 msgstr "开启V2ray分流"
 
 msgid "When open v2ray split-flow,your main server must be a v2ray server"
-msgstr "当使用v2ray分流功能时 主服务器必须为V2ray"
+msgstr "当使用v2ray分流功能时 主TCP节点必须为V2ray"
 
 msgid "Youtube Proxy"
 msgstr "Youtube 代理"
@@ -100,7 +100,7 @@ msgid "AlterId"
 msgstr "额外ID"
 
 msgid "Save And Start Subscribe"
-msgstr "保存并开始订阅"
+msgstr "保存开始订阅"
 
 
 msgid "VmessId (UUID)"
@@ -173,7 +173,7 @@ msgid "UDP Relay Server"
 msgstr "UDP中继服务器"
 
 msgid "Same as Global Server"
-msgstr "与全局服务器相同"
+msgstr "与主TCP服务器相同"
 
 msgid "Servers Setting"
 msgstr "服务器配置"
@@ -527,7 +527,7 @@ msgstr "GFW列表"
 
 
 msgid "Main Server"
-msgstr "主服务器"
+msgstr "主TCP服务器"
 
 msgid "Anti-pollution DNS Server"
 msgstr "访问国外域名DNS服务器"
@@ -602,7 +602,7 @@ msgid "LAN IP AC"
 msgstr "LAN IP访问控制"
 
 msgid "Game Mode UDP Server"
-msgstr "游戏模式UDP中继服务器"
+msgstr "UDP服务器"
 
 msgid "Game Mode UDP Relay"
 msgstr "游戏模式UDP中继"
@@ -797,10 +797,10 @@ msgid "Socket Connected"
 msgstr "连接测试"
 
 msgid "Hello World version update"
-msgstr " 一键更新"
+msgstr "仅限用于特殊情况的更新"
 
 msgid "update version"
-msgstr "更新版本"
+msgstr "一键更新版本"
 
 msgid "Enable HTTP Proxy"
 msgstr "启用HTTP代理"
@@ -875,7 +875,7 @@ msgid "SS/SSR/V2RAY Server"
 msgstr "SS/SSR/V2RAY 服务端"
 
 msgid "Delete All Subscribe Severs"
-msgstr "删除所有订阅服务器节点"
+msgstr "删除所有节点"
 
 msgid "Update All Subscribe Severs"
 msgstr "更新所有订阅服务器节点"
