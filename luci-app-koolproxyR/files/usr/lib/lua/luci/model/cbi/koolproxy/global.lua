@@ -22,8 +22,7 @@ local p=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/yhosts.txt | w
 local h=luci.sys.exec("grep -v '^!' /usr/share/koolproxy/data/rules/user.txt | wc -l")
 local l=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/koolproxy.txt | wc -l")
 local q=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/daily.txt | wc -l")
-local f=luci.sys.exec("cat /usr/share/koolproxy/data/rules/anti-ad.txt | wc -l")
-local n=luci.sys.exec("cat /usr/share/koolproxy/data/rules/neodevhost.txt | wc -l")
+local f=luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/anti-ad.txt | wc -l")
 local i=luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 
@@ -71,7 +70,6 @@ e:value("easylistchina.txt", translate("ABP规则"))
 e:value("fanboy.txt", translate("Fanboy规则"))
 e:value("yhosts.txt", translate("Yhosts规则"))
 e:value("anti-ad.txt", translate("Anti-AD规则"))
-e:value("neodevhost.txt", translate("Neodevhost规则"))
 e:value("koolproxy.txt", translate("静态规则"))
 e:value("daily.txt", translate("每日规则"))
 e:value("kp.dat", translate("视频规则"))
@@ -127,7 +125,7 @@ e.write = function()
 	luci.sys.call("/usr/share/koolproxy/kpupdate 2>&1 >/dev/null")
 	luci.http.redirect(luci.dispatcher.build_url("admin","services","koolproxy"))
 end
-e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />Anti-AD规则: %s条<br />Neodevhost规则: %s条<br />静态规则: %s条<br /> 视频规则: %s<br />乘风视频: %s条<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p, f, n, l, b, m, q, h, i))
+e.description = translate(string.format("<font color=\"red\"><strong>更新订阅规则与Adblock Plus Hosts</strong></font><br /><font color=\"green\">ABP规则: %s条<br />Fanboy规则: %s条<br />Yhosts规则: %s条<br />Anti-AD规则: %s条<br />静态规则: %s条<br />视频规则: %s<br />乘风视频: %s条<br />每日规则: %s条<br />自定义规则: %s条<br />Host: %s条</font><br />", s, u, p, f, l, b, m, q, h, i))
 t:tab("cert",translate("Certificate Management"))
 
 e=t:taboption("cert",DummyValue,"c1status",translate("<div align=\"left\">Certificate Restore</div>"))
