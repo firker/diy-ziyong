@@ -241,11 +241,8 @@ load_rules() {
 			easylistchina.txt)
 				sed -i '10s/0/1/g' $KP_DIR/data/source.list
 			;;
-			chengfeng.txt)
-				sed -i '11s/0/1/g' $KP_DIR/data/source.list
-			;;
 			fanboy.txt)
-				sed -i '12s/0/1/g' $KP_DIR/data/source.list
+				sed -i '11s/0/1/g' $KP_DIR/data/source.list
 			;;
 		esac
 	done
