@@ -200,7 +200,7 @@ filters:
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风规则
   id: 1597894589
-- enabled: true
+- enabled: false
   url: https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
   name: Neodev Pro
   id: 1601856945
@@ -217,7 +217,6 @@ user_rules:
 - '||google.com/pagead/'
 - '||static.doubleclick.net^$domain=youtube.com'
 - '||youtube.com/get_midroll_'
-- ""
 dhcp:
   enabled: false
   interface_name: ""
