@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! title: 乘风 视频广告过滤规则
-! Version: 202008031
+! Version: 202010011
 ! Expires: 2 days
 ! Homepage: http://bbs.kafan.cn/thread-1866845-1-1.html
 
@@ -15,20 +15,18 @@ v.youku.com##.control-phonewatch,#right-title-ad-banner
 !youku.com##.ad-wrap
 ||sealine.youku.com/yk/*callback=adpagesdk$script
 
-iqiyi.com##div[data-adzone][adid],#block-V
+iqiyi.com##div[data-adzone],#block-V
 !iqiyi.com##+js(nano-sib)
 iqiyi.com##+js(set, Object.prototype.parseXML, noopFunc)
 !||t7z.cupid.iqiyi.com/show$script,important
 ||static.iqiyi.com/js/common/mars_v.js$script
 ||iqiyi.com/videos/other/20$xmlhttprequest,object-subrequest
+||iqiyipic.com/image/20*_100000$image
 ||ssports.iqiyi.com/app/$object-subrequest
 
 qq.com##.mod_ad
 v.qq.com,sports.qq.com##+js(json-prune,ad,vinfo)
-!v.qq.com##+js(json-prune,ad,adList)
-!v.qq.com##+js(json-prune,ad,adLoc)
-||qq.com/*.1.mp4?*fmt=shd^$mp4,domain=v.qq.com
-v.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
+v.qq.com,sports.qq.com##+js(nano-sib, \u5012\u8ba1\u65f6)
 @@||qq.com/fcgi-bin/
 ||adss.video.qq.com/
 ||gtimg.com/qqlive/
@@ -93,12 +91,37 @@ le.com##.banner_ad,#rightBottomPop,div.banner_left,div.banner_right,[id^=pause_a
 douyu.com##div[class$="-ad"],div[class|=ad],div.no-login
 ||douyucdn.cn/adxdsp/$image
 ||wan.douyu.com/
+douyu.com,huya.com##a[href^="https://g.wan."]
 huya.com###hy-ad,#hy-ab,#huya-ab
 ||g.huya.com/
 
 ||pub.funshion.com
-||www.dililitv.com/*.php?ad=$script
 
 */preroll/$media,domain=91porn.com
 ||91p20.space^
 ||waust.at^
+
+||www.dililitv.com/*.php?ad=$script
+www.dililitv.com,www.hmtv.me,imeiju.io,www.kalidm.com,www.zxfun.net##+js(acis, console.log, Object.defineProperty)
+
+www.dyjihe.com##.tempWrap
+
+haitur.com,www.haicaoys.com,www.cdfdy.com,www.labays.com,www.meiyuktv.cn##.dplayer-web-fullscreen-fix .float-box
+haitur.com##.container:style(max-width:90%!important;width:90%!important)
+haitur.com##.left-content:style(width:77%!important)
+
+www.imomoe.in,hehua.net,kakadm.com##+js(ra, target, a[href^="/"])
+www.imomoe.in###adl,#adr
+
+yatu.tv###loadtop,[id^=myas],#myds1,#daohang
+3z9e.cn
+anquanzhuomian.com
+ch-hr12333.com
+g1c5.com
+ieeod0.com
+tracker.novage.com.ua
+tracker.openwebtorrent.com
+fourier.taobao.com
+v4dwkcv.com
+youle55.com
+||www.yatu.tv/image/*.gif^$image
