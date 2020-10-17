@@ -238,12 +238,7 @@ load_rules() {
 	for rule in $rulelist
 	do
 		case "$rule" in
-			easylistchina.txt)
-				sed -i '10s/0/1/g' $KP_DIR/data/source.list
-			;;
-			fanboy.txt)
-				sed -i '11s/0/1/g' $KP_DIR/data/source.list
-			;;
+
 		esac
 	done
 }
