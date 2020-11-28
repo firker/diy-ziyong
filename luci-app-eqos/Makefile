@@ -38,6 +38,10 @@ endef
 define Build/Compile
 endef
 
+define Package/luci-app-eqos/conffiles
+	/etc/config/eqos
+endef
+
 define Package/luci-app-eqos/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
 	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
