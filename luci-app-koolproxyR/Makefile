@@ -39,6 +39,11 @@ fi
 exit 0
 endef
 
+define Package/luci-app-koolproxyR/conffiles
+	/etc/config/koolproxy
+	/usr/share/koolproxy/data/rules/
+endef
+
 define Package/luci-app-koolproxyR/install
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci
 	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
