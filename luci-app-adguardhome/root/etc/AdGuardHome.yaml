@@ -33,7 +33,6 @@ dns:
   - https://cloudflare-dns.com/dns-query
   - https://1.0.0.1/dns-query
   - https://dns.adgk.net:4433/dns-query
-  - https://esdns.kbsml.com/dns-query
   - tcp://8.8.8.8
   - tcp://8.8.4.4
   - 117.50.11.11
