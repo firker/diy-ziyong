@@ -206,7 +206,7 @@ user_rules:
 - '@@||jd.com^important'
 - '@@||flyme.cn^$important'
 - '@@||meizu.com^$important'
-- '@@||wl.jd.com^$important'
+- '@@||dj.k.jd.com^$important'
 - '@@||flydigi.com^'
 - '@@||pv.sohu.com^$important'
 - /googleads.$~script,domain=~googleads.github.io
