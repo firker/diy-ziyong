@@ -1,4 +1,5 @@
 #!/bin/bash
+
 PATH="/usr/sbin:/usr/bin:/sbin:/bin"
 binpath=$(uci get AdGuardHome.AdGuardHome.binpath)
 if [ -z "$binpath" ]; then
@@ -130,21 +131,21 @@ doupdate_core(){
 	Arch="amd64"
 	;;
 	"mipsel")
-	Arch="mipsle"
-	;;
+		Arch="mipsle"
+		;;
 	"mips64el")
-	Arch="mips64le"
-	Arch="mipsle"
-	echo -e "mips64el use $Arch may have bug" 
-	;;
+		Arch="mips64le"
+		Arch="mipsle"
+		echo -e "mips64el use $Arch may have bug"
+		;;
 	"mips")
-	Arch="mips"
-	;;
+		Arch="mips"
+		;;
 	"mips64")
-	Arch="mips64"
-	Arch="mips"
-	echo -e "mips64 use $Arch may have bug" 
-	;;
+		Arch="mips64"
+		Arch="mips"
+		echo -e "mips64 use $Arch may have bug"
+		;;
 	"arm")
 	Arch="arm"
 	;;
