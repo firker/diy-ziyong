@@ -57,6 +57,9 @@ add_cru()
 	local week=$(uci get autotimeset.@login[0].week)
 	local minute=$(uci get autotimeset.@login[0].minute)
 	local hour=$(uci get autotimeset.@login[0].hour)
+	[ "$minute" -eq 0 ] && minute="00"
+	[ "$week" -eq 7 ] && week="*"
+	
 		if [ $stype = 1 ] ; then
 			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && reboot" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
