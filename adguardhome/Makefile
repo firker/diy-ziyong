@@ -63,8 +63,8 @@ define Build/Compile
 endef
 
 define Package/$(PKG_NAME)/install
-	$(INSTALL_DIR) $(1)/usr/bin/AdGuardHome
-	$(INSTALL_BIN) $(UNTAR_DIR)/*/$(PROJECT_NAME) $(1)/usr/bin/AdGuardHome/$(PKG_NAME)
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(UNTAR_DIR)/*/$(PROJECT_NAME) $(1)/usr/bin/$(PKG_NAME)
 	$(INSTALL_DIR) $(1)/etc
 	$(CP) -r ./files/etc $(1)/etc
 endef
