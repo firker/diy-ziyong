@@ -39,7 +39,7 @@ t=t:gsub("\r\n?","\n")
 e.writefile("/tmp/network",t)
 if(luci.sys.call("cmp -s /tmp/network /etc/config/network")==1)then
 e.writefile("/etc/config/network",t)
-luci.sys.call("/etc/init.d/network restart >/dev/null")
+luci.sys.call("/sbin/ifup wan >/dev/null")
 end
 e.remove("/tmp/network")
 end
@@ -81,7 +81,7 @@ t=t:gsub("\r\n?","\n")
 e.writefile("/tmp/dhcp",t)
 if(luci.sys.call("cmp -s /tmp/dhcp /etc/config/dhcp")==1)then
 e.writefile("/etc/config/dhcp",t)
-luci.sys.call("/etc/init.d/network restart >/dev/null")
+luci.sys.call("/sbin/ifup wan >/dev/null")
 end
 e.remove("/tmp/dhcp")
 end
