@@ -35,7 +35,7 @@ run_autotimeset()
 			echo "Auto poweroff has started.."	
 		fi
 		if [ $stype = 3 ] ; then
-			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /etc/init.d/network restart" 
+			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
 				sed -i '/network restart/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
@@ -79,7 +79,7 @@ add_cru()
 			echo "Auto poweroff has started."
 		fi
 		if [ $stype = 3 ] ; then
-			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /etc/init.d/network restart" 
+			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
 				sed -i '/network/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
