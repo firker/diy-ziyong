@@ -37,11 +37,11 @@ run_autotimeset()
 		if [ $stype = 3 ] ; then
 			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
-				sed -i '/network restart/d' /etc/crontabs/root >/dev/null 2>&1
+				sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
 				
 			fi
-			echo "Auto network restart has started."
+			echo "Auto ifup wan has started."
 		fi
      else
 			del_cru
@@ -81,11 +81,11 @@ add_cru()
 		if [ $stype = 3 ] ; then
 			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
-				sed -i '/network/d' /etc/crontabs/root >/dev/null 2>&1
+				sed -i '/ifup/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
 				
 			fi
-			echo "Auto network restart has started."
+			echo "Auto ifup wan has started."
 		fi
     else
        	del_cru
