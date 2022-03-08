@@ -1,20 +1,15 @@
 name: Update_js
 
 on:
-  push:
-   branches: 
-      - main
-
-  schedule:
-     - cron: 50 */4 * * * 
-
-  release:
-      types: [published]
-
-  watch:
-     types: started
-
+  repository_dispatch:
   workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  schedule:
+    - cron: 0 17 */7 * *
 
 jobs:
 
