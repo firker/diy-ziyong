@@ -1,0 +1,47 @@
+name: Update_js
+
+on:
+  push:
+   branches: 
+      - main
+
+  schedule:
+     - cron: 50 */4 * * * 
+
+  release:
+      types: [published]
+
+  watch:
+     types: started
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+    
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: update
+        run: |
+          wget https://raw.githubusercontent.com/firkerword/KPR/main/Synchronize.sh
+          chmod 0755 ./Synchronize.sh
+          ./Synchronize.sh
+      - name: Push Commits
+        run : |
+          cd diy-ziyong
+          git config --global user.email "416535868@qq.com"
+          git config --global user.name "firker"
+          git add . 
+          git commit -m "Add changes" -a
+          git push "https://firker:${{ secrets.TOKEN }}@github.com/firker/diy-ziyong.git" main
+          
+      - name: Delete workflow runs
+        uses: GitRML/delete-workflow-runs@main
+        with:
+          retain_days: 1
+          keep_minimum_runs: 3 
