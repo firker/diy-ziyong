@@ -14,7 +14,7 @@ msgid "Scheduled Poweroff"
 msgstr "定时关闭机器"
 
 msgid "Scheduled ReNetwork"
-msgstr "定时重启网络"
+msgstr "定时重启wan"
 
 msgid "Week Day"
 msgstr "设定星期"

@@ -81,7 +81,7 @@ add_cru()
 		if [ $stype = 3 ] ; then
 			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
-				sed -i '/ifup/d' /etc/crontabs/root >/dev/null 2>&1
+				sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
 				
 			fi
@@ -113,8 +113,8 @@ del_cru()
 	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep poweroff | wc -l) -ne 0 ]; then
 		sed -i '/poweroff/d' /etc/crontabs/root >/dev/null 2>&1
 	fi
-	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep network | wc -l) -ne 0 ]; then
-		sed -i '/network/d' /etc/crontabs/root >/dev/null 2>&1
+	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep ifup wan | wc -l) -ne 0 ]; then
+		sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 	fi
 }
 
