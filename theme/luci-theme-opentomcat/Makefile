@@ -10,9 +10,9 @@ THEME_NAME:=opentomcat
 THEME_TITLE:=opentomcat
 
 PKG_NAME:=luci-theme-$(THEME_NAME)
-PKG_VERSION:=0.3.4
+PKG_VERSION:=0.2.51
 
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 include $(INCLUDE_DIR)/package.mk
 
