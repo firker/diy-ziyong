@@ -25,6 +25,10 @@ endef
 define Build/Prepare
 	$(foreach po,$(wildcard ${CURDIR}/po/zh-cn/*.po), \
 		po2lmo $(po) $(PKG_BUILD_DIR)/$(patsubst %.po,%.lmo,$(notdir $(po)));)
+<<<<<<< HEAD
+=======
+	chmod 755 $(PKG_BUILD_DIR)/root/etc/init.d/autotimeset
+>>>>>>> 334d7de9b78dd1c6327e5aa81da0eec64eb14d2a
 endef
 
 define Build/Compile
