@@ -23,15 +23,15 @@ jobs:
 
       - name: update
         run: |
+          git clone https://github.com/firker/diy-ziyong.git
+         
+          cd diy-ziyong
+
+          rm -rf ./smartdns
+
           svn co https://github.com/kiddin9/openwrt-packages/trunk/smartdns
 
           rm -rf ./smartdns/.svn
-
-          git clone https://github.com/firker/diy-ziyong.git
-
-          # rm -rf ./diy-ziyong/smartdns
-
-          cp -r ./smartdns ./diy-ziyong
           
       - name: Push Commits
         run : |
