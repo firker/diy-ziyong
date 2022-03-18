@@ -90,18 +90,10 @@ tls:
   certificate_path: ""
   private_key_path: ""
 filters:
-- enabled: false
-  url: https://hblock.molinero.dev/hosts
-  name: 主机列表
-  id: 1565484161
 - enabled: true
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/mv.txt
   name: 乘风视频
   id: 1565484162
-- enabled: true
-  url: https://banbendalao.coding.net/p/adgk/d/ADgk/git/raw/master/ADgk.txt
-  name: Android的去广告规则
-  id: 1565484163
 - enabled: true
   url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-easylist.txt
   name: 命中率第一
@@ -191,10 +183,6 @@ filters:
   name: hosts
   id: 1565486408
 - enabled: true
-  url: https://gitlab.com/xuhaiyang1234/AAK-Cont/raw/master/FINAL_BUILD/aak-cont-list-notubo.txt
-  name: aak-cont-list-notubo
-  id: 1596855790
-- enabled: true
   url: https://adaway.org/hosts.txt
   name: Adaway
   id: 1597894588
@@ -202,10 +190,6 @@ filters:
   url: https://gitee.com/xinggsf/Adblock-Rule/raw/master/rule.txt
   name: 乘风规则
   id: 1597894589
-- enabled: false
-  url: https://raw.githubusercontent.com/neodevpro/neodevhost/master/adblocker
-  name: Neodev Pro
-  id: 1601856945
 whitelist_filters: []
 user_rules: []
 dhcp:
