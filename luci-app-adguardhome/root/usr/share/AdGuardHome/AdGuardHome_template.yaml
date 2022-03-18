@@ -2,8 +2,8 @@ bind_host: 0.0.0.0
 bind_port: 3000
 beta_bind_port: 0
 users:
-- name: root
-  password: $2y$10$dwn0hTYoECQMZETBErGlzOId2VANOVsPHsuH13TM/8KnysM5Dh/ve
+- name: AdGuardHome
+  password: $2a$10$GWysh9ul8MSBzzzuLhjqtu6ZlFrq9aWRt9FYvUPXJd2cGvyGFB676
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
