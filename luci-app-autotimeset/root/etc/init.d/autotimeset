@@ -35,7 +35,7 @@ run_autotimeset()
 			echo "Auto poweroff has started.."	
 		fi
 		if [ $stype = 3 ] ; then
-			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
+			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
 				sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
@@ -79,7 +79,7 @@ add_cru()
 			echo "Auto poweroff has started."
 		fi
 		if [ $stype = 3 ] ; then
-			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && /sbin/ifup wan" 
+			local cmd="$minute $hour * * $week sleep 5 && touch /etc/banner && ifup wan" 
 			if [ ! -f "/etc/crontabs/root" ] || [ $(cat /etc/crontabs/root | grep "$cmd" | wc -l) -eq 0 ]; then
 				sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 				echo "$cmd" >> /etc/crontabs/root
@@ -113,7 +113,7 @@ del_cru()
 	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep poweroff | wc -l) -ne 0 ]; then
 		sed -i '/poweroff/d' /etc/crontabs/root >/dev/null 2>&1
 	fi
-	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep ifup wan | wc -l) -ne 0 ]; then
+	if [ -f "/etc/crontabs/root" ] && [ $(cat /etc/crontabs/root | grep ifup | wc -l) -ne 0 ]; then
 		sed -i '/ifup wan/d' /etc/crontabs/root >/dev/null 2>&1
 	fi
 }
