@@ -39,7 +39,7 @@ jobs:
           
           rm -rf ./adguardhome/.svn
           
-          # rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
+          rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
           
       - name: Push Commits
         run : |
