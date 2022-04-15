@@ -35,9 +35,9 @@ jobs:
           
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
           
-          rm -rf ./smartdns/.git
+          rm -rf ./smartdns/.svn
           
-          rm -rf ./adguardhome/.git
+          rm -rf ./adguardhome/.svn
           
           # rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
           
