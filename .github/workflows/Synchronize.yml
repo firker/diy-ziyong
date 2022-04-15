@@ -33,6 +33,12 @@ jobs:
 
           rm -rf ./smartdns/.svn
           
+          svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
+          
+          rm -rf ./adguardhome/.svn
+          
+          rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
+          
       - name: Push Commits
         run : |
           cd diy-ziyong
