@@ -88,7 +88,7 @@ msgstr "执行文件路径"
 
 #: /mnt/A/openwrt-latest/package/ctcgfw/luci-app-adguardhome/luasrc/model/cbi/AdGuardHome/base.lua:22
 msgid "Browser management port"
-msgstr "网页管理端口"
+msgstr "管理端口"
 
 # hide div
 #: /mnt/A/openwrt-latest/package/ctcgfw/luci-app-adguardhome/luasrc/model/cbi/AdGuardHome/base.lua:189
@@ -147,7 +147,7 @@ msgstr "强制更新"
 msgid ""
 "Free and open source, powerful network-wide ads & trackers blocking DNS "
 "server."
-msgstr "免费开源，功能强大的全网络广告和跟踪程序拦截DNS服务器"
+msgstr "全网络广告和跟踪程序拦截DNS服务器，默认账号密码：AdGuardHome"
 
 #: /mnt/A/openwrt-latest/package/ctcgfw/luci-app-adguardhome/luasrc/model/cbi/AdGuardHome/base.lua:184
 msgid "Gfwlist domain upstream dns service"
