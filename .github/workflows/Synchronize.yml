@@ -27,11 +27,11 @@ jobs:
          
           cd diy-ziyong
 
-          rm -rf ./smartdns
+          rm -rf ./smartdns/Makefile
           
           rm -rf ./adguardhome
 
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/smartdns
+          svn co https://github.com/kiddin9/openwrt-packages/trunk/smartdns/Makefile
           
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
           
