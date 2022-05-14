@@ -26,20 +26,16 @@ jobs:
           git clone https://github.com/firker/diy-ziyong.git
          
           cd diy-ziyong
-
-          rm -rf ./smartdns/Makefile
           
           rm -rf ./adguardhome
-
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/smartdns/Makefile
-          
+       
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
-          
-          rm -rf ./smartdns/.svn
-          
+        
           rm -rf ./adguardhome/.svn
           
           rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
+          
+          curl -fsSL  https://raw.githubusercontent.com/kiddin9/openwrt-packages/master/smartdns/Makefile > ./smartdns/Makefile
           
       - name: Push Commits
         run : |
