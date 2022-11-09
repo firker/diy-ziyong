@@ -1,25 +1,31 @@
 name: Update_js
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+  watch:
+    types: started
+  repository_dispatch:
+    types: 同步源仓库
   schedule:
-    - cron: 0 0 */7 * *
+    - cron: 1 0 */3 * *
 
 jobs:
 
-  build:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT || github.event.client_payload.PAT }}
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
+    if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id || github.actor == 'BlueSkyClouds'
+    timeout-minutes: 2
     steps:
-    
-      - name: Checkout
-        uses: actions/checkout@main
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: update
         run: |
