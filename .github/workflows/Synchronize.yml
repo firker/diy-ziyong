@@ -33,6 +33,8 @@ jobs:
          
           cd diy-ziyong
           
+           rm -rf luci-app-adguardhome-L alist-18.06
+          
           rm -rf ./adguardhome
        
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
