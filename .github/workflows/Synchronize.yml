@@ -33,7 +33,7 @@ jobs:
          
           cd diy-ziyong
           
-           rm -rf luci-app-adguardhome-L alist-18.06
+          rm -rf luci-app-adguardhome-L alist-18.06
           
           rm -rf ./adguardhome
        
