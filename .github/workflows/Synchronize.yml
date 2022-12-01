@@ -41,6 +41,8 @@ jobs:
           
           rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
           
+          sed -i 's/默认用户名密码都是root/默认用户名密码都是AdGuardHome/g' ./adguardhome/patches/default_username.patch
+          
           curl -fsSL  https://raw.githubusercontent.com/kiddin9/openwrt-packages/master/smartdns/Makefile > ./smartdns/Makefile
           
       - name: Push Commits
