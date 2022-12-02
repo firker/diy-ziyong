@@ -33,7 +33,11 @@ jobs:
          
           cd diy-ziyong
 
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
+          svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
+
+          svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
+
+          svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner
         
           rm -rf ./adguardhome/.svn
           
