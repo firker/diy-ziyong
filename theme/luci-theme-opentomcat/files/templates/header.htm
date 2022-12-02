@@ -4,12 +4,7 @@
 	luci-theme-material
 	Copyright 2015-2017 Lutty Yang <lutty@wcan.in>
 
-	Have a bug? Please create an issue here on GitHub!
-	https://github.com/LuttyYang/luci-theme-opentomcat/issues
-
 	luci-theme-bootstrap:
-	Copyright 2008 Steven Barth <steven@midlink.org>
-	Copyright 2008-2016 Jo-Philipp Wich <jow@openwrt.org>
 	Copyright 2012 David Menting <david@nut-bolt.nl>
 
 	MUI:
@@ -221,7 +216,7 @@
 <header>
 	<div class="container">
 		<span class="showSide"></span>
-		<a class="brand" href="#"><%="OpenWrt"%></a>
+		<a class="brand" href="#"><%=boardinfo.hostname or "?"%></a>
 		<div class="pull-right">
 			<% render_changes() %>
 			<span id="xhr_poll_status" style="display:none" onclick="XHR.running() ? XHR.halt() : XHR.run()">

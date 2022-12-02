@@ -596,22 +596,22 @@ header > .container > a[class="brand"]:after {
 
 .main > .main-left > .nav > .slide > a[data-title="Status"]:before {
     content: "\e026";
-     color: #5e72e4!important;
+    color: #5e72e4!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="System"]:before {
     content: "\e01c";
-   color: #fb6340!important;
+    color: #fb6340!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Network"]:before {
     content: "\e00e";
-   color: #8965e0!important;
+    color: #8965e0!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="VPN"]:before {
     content: "\e029";
-   color: #5F9EA0!important;
+    color: #5F9EA0!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Services"]:before {
@@ -621,22 +621,22 @@ header > .container > a[class="brand"]:after {
 
 .main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
     content: "\e02c";
- color: #00b2ee!important;
+    color: #00b2ee!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="NAS"]:before {
     content: "\e00b";
-   color: #F1C40F!important;
+    color: #F1C40F!important;
 }
 
-.main> .main-left> .nav> .slide > a[data-title=Statistics]:before {
+.main> .main-left> .nav> .slide > a[data-title="Statistics"]:before {
     content: "\e00f";
-   color: #1E90FF!important;
+    color: #1E90FF!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Control"]:before {
     content: "\e022";
-   color: #00FF7F!important;
+    color: #00FF7F!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="QOS"]:before {
@@ -646,13 +646,13 @@ header > .container > a[class="brand"]:after {
 
 .main > .main-left > .nav > .slide > a[data-title="Bandwidth Monitor"]:before {
     content: "\e00f";
-color: #2dce89!important;
+    color: #2dce89!important;
 }
 
 .main > .main-left > .nav > li > a[data-title="Logout"] {
     padding-left:36px;
     line-height:40px;
-color: #9400D3!important;
+    color: #9400D3!important;
 }
 
 .main > .main-left > .nav > li > a[data-title="Logout"]:before {
@@ -905,7 +905,6 @@ fieldset > .table > .tr:nth-of-type(odd) {
 }
 
 /* fix progress bar */
-#cpu_free > div,
 #swaptotal > div,
 #swapfree > div,
 #swapcache > div,
@@ -920,7 +919,6 @@ fieldset > .table > .tr:nth-of-type(odd) {
     color:#76838f !important;
 }
 
-#cpu_free >  div > div,
 #swaptotal > div > div,
 #swapfree > div > div,
 #swapcache > div > div,
@@ -930,7 +928,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #3CCC3C !important;
+    background-color: #60CC60 !important;
 
 }
 
@@ -959,28 +957,23 @@ td > table > tbody > tr > td,
 /* button style */
 
 .cbi-button {
-	-webkit-appearance: none;
-	text-transform: uppercase;
-	color: rgba(0, 0, 0, 0.87);
-	background-color: #337ab7;
-	transition: all 0.2s ease-in-out;
+cursor: pointer;
 	display: inline-block;
-	padding: 0 0.8rem;
-	border: none;
-	border-radius: 0.2rem;
-	cursor: pointer;
-	-ms-touch-action: manipulation;
-	touch-action: manipulation;
-	background-image: none;
-	text-align: center;
-	vertical-align: middle;
+	background-color: #e6e6e6;
+	background-repeat: no-repeat;	
+	padding: 5px 14px 6px;
+	color: #333;
 	white-space: nowrap;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	font-size: 0.8rem;
-	width: auto !important;
+	font-size: 14px;
+	line-height: normal;
+	border: 1px solid #ccc;
+	border-bottom-color: #bbb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .cbi-button:hover,

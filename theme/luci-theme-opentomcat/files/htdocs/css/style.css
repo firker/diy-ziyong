@@ -1,4 +1,4 @@
-﻿/**
+/**
  *  Material is a clean HTML5 theme for LuCI. It is based on luci-theme-bootstrap and MUI
  *
  *  luci-theme-material
@@ -501,74 +501,67 @@ header > .container > a[class="brand"]:after {
     -webkit-font-smoothing: antialiased;
 }
 
-
 .main > .main-left > .nav > .slide > a[data-title="Status"]:before {
     content: "\e026";
-   color: #5e72e4!important;
-  
-}
-
-.main > .main-left > .nav > .slide > a[data-title="Status"]:before {
-    content: "\e026";
-   color: #5e72e4!important;
-  
+    color: #5e72e4!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="System"]:before {
     content: "\e01c";
-color: #FF00FF!important;
+    color: #FF00FF!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Network"]:before {
     content: "\e00e";
-color: #8965e0!important;
+    color: #8965e0!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="VPN"]:before {
     content: "\e029";
- color: #5F9EA0!important;
+    color: #5F9EA0!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Services"]:before {
     content: "\e01b";
- color: #11cdef!important;
+    color: #11cdef!important;
+}
+
+.main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
+    content: "\e02c";
+    color: #00b2ee!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="NAS"]:before {
     content: "\e00b";
-   color: #F1C40F!important;
-}
-
-.main > .main-left > .nav > .slide > a[data-title="Internet"]:before {
-    content: "\e004";
-   color: #ff0097!important;
+    color: #F1C40F!important;
 }
 
 .main > .main-left > .nav > .slide > a[data-title="Control"]:before {
     content: "\e024";
-  color: 	#3CB371!important;
+    color: #3CB371!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="Statistics"]:before {
     content: "\e023";
-  color: #1E90FF!important;
+    color: #1E90FF!important;
 }
+
 .main > .main-left > .nav > .slide > a[data-title="QOS"]:before {
     content: "\e00a";
     color: #f3a4b5!important;
 }
-.main > .main-left > .nav > .slide > a[data-title="Docker"]:before {
-    content: "\e025";
-    color: #66CC00!important;
-}
+
 .main > .main-left > .nav > .slide > a[data-title="Bandwidth Monitor"]:before {
     content: "\e00f";
-color: #2dce89!important;
+    color: #2dce89!important;
 }
 
 .main > .main-left > .nav > li > a[data-title="Logout"] {
     padding-left:36px;
     line-height:40px;
- color: #9400D3!important;
+    color: #9400D3!important;
 }
+
 .main > .main-left > .nav > li > a[data-title="Logout"]:before {
     content: "\e005";
     display: inline-block;
@@ -655,7 +648,7 @@ color: #FF99CC;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active {
-   
+    
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > li > a {
@@ -687,13 +680,13 @@ color: #FF99CC;
 .main > .main-left > .nav > .slide > .slide-menu > li:hover {
        /* border-left: #ffffff 3px solid; */
 	color: white;
-	background: #3366CC;
+	background: #366CD9;
 }
 
 .main > .main-left > .nav > .slide > .slide-menu > .active:hover {
    /* border-left: #ffffff 3px solid; */
 	color: white;
-	background-color: #003366;
+	background-color: #00468C;
 	cursor: hand;
 }
 
@@ -855,7 +848,7 @@ fieldset > .table > .tr:nth-of-type(odd) {
 #memcache > div > div,
 #memtotal > div > div {
     height: 1.4rem !important;
-    background-color: #44cef6!important;
+    background-color: #44CEF6!important;
 }
 
 /* fix multiple table */
@@ -889,7 +882,7 @@ cursor: pointer;
 	background-repeat: no-repeat;	
 	padding: 5px 14px 6px;
 	color: #333;
-                 white-space: nowrap;
+	white-space: nowrap;
 	font-size: 14px;
 	line-height: normal;
 	border: 1px solid #ccc;
