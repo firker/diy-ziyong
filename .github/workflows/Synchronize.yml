@@ -36,8 +36,7 @@ jobs:
           rm -rf ./cpulimit        
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
-          rm -rf ./luci-app-autotimeset
-          git clone https://github.com/sirpdboy/luci-app-autotimeset.git
+
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner        
