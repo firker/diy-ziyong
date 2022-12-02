@@ -40,7 +40,7 @@ jobs:
           git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-onliner        
+          svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner        
           sed -i 's/默认用户名密码都是root/默认用户名密码都是AdGuardHome/g' ./adguardhome/patches/default_username.patch       
           curl -fsSL  https://raw.githubusercontent.com/kiddin9/openwrt-packages/master/smartdns/Makefile > ./smartdns/Makefile
           
