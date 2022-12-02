@@ -12,7 +12,7 @@ trigger() {
 		poweroff
 		;;
 	network)
-		/etc/init.d/network restart
+		ifup wan
 		;;
 	esac
 }
