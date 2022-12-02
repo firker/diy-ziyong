@@ -36,7 +36,6 @@ jobs:
           rm -rf ./cpulimit        
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
-          rm -rf ./luci-app-poweroffdevice
 
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
