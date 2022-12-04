@@ -42,7 +42,8 @@ jobs:
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner        
           sed -i 's/默认用户名密码都是root/默认用户名密码都是AdGuardHome/g' ./adguardhome/patches/default_username.patch       
           curl -fsSL  https://raw.githubusercontent.com/kiddin9/openwrt-packages/master/smartdns/Makefile > ./smartdns/Makefile
-          
+          rm -rf ./luci-app-cpulimit/.svn        
+          rm -rf ./luci-app-onliner/.svn
       - name: Push Commits
         run : |
           cd diy-ziyong
