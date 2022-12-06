@@ -36,7 +36,6 @@ jobs:
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
           rm -rf ./luci-app-wrtbwmon
-          rm -rf ./luci-app-wrtbwmon-zhcn
           rm -rf ./wrtbwmon
           svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon
           svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon
