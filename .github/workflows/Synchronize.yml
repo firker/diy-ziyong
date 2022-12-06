@@ -37,9 +37,9 @@ jobs:
           rm -rf ./luci-app-onliner
           rm -rf ./luci-app-wrtbwmon        
           rm -rf ./wrtbwmon
-
-          svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
-          svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon package/wrtbwmon
+          rm -rf ./package
+          svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon
+          svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
