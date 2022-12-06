@@ -35,9 +35,9 @@ jobs:
           rm -rf ./cpulimit        
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
-          rm -rf ./luci-app-wrtbwmon        
+          rm -rf ./luci-app-wrtbwmon
+          rm -rf ./luci-app-wrtbwmon-zhcn
           rm -rf ./wrtbwmon
-          rm -rf ./package
           svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-wrtbwmon
           svn co https://github.com/sirpdboy/sirpdboy-package/trunk/wrtbwmon
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
