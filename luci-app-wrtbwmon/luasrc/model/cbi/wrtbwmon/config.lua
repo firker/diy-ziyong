@@ -1,7 +1,7 @@
 local lastvalue
 local cursor = luci.model.uci.cursor()
 local m, s, o
-m = Map("wrtbwmon", translate("Traffic Configuration"))
+m = Map("wrtbwmon", translate("Usage - Configuration"))
 
 s = m:section(NamedSection, "general", "wrtbwmon", translate("General settings"))
 
