@@ -5,7 +5,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=luci-app-wrtbwmon
+PKG_NAME:=luci-app-wrtbwmon-zh
 LUCI_PKGARCH:=all
 PKG_VERSION:=v0.8.9
 PKG_RELEASE:=1
