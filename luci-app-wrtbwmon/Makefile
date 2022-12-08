@@ -1,21 +1,16 @@
 #
-# Copyright (C) 2019 Openwrt.org
-#
+# Copyright (C) 2020 OpenWrt.org
+# 流量统计
 # This is free software, licensed under the Apache License, Version 2.0 .
-#
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-wrtbwmon
-PKG_VERSION:=1.6.3
-PKG_RELEASE:=1
-
-PKG_LICENSE:=Apache-2.0
-PKG_MAINTAINER:=
-
-LUCI_TITLE:=A Luci module that uses wrtbwmon to track bandwidth usage
-LUCI_DEPENDS:=+wrtbwmon
 LUCI_PKGARCH:=all
+PKG_VERSION:=v0.8.9
+PKG_RELEASE:=1
+LUCI_DEPENDS:=+wrtbwmon
+LUCI_TITLE:=LuCI support for Wrtbwmon
 
 include $(TOPDIR)/feeds/luci/luci.mk
 

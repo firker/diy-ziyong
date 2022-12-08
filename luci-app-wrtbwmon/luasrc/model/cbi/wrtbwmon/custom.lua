@@ -3,9 +3,9 @@ local USER_FILE_PATH = "/etc/wrtbwmon.user"
 local fs = require "nixio.fs"
 
 local f = SimpleForm("wrtbwmon", 
-    translate("Usage - Custom User File"), 
-    translate("This file is used to match users with MAC addresses. "
-    .. "Each line must have the following format: <b><font color=\"red\">\"00:aa:bb:cc:ee:ff,username\"</font></b>."))
+    "流量统计 - 自定义", 
+    "本配置可根据 MAC 地址自定义主机备注名"
+    .. "每一行格式必须按照此格式配置: \"00:aa:bb:cc:ee:ff,主机备注名\"。")
 
 local o = f:field(Value, "_custom")
 
@@ -20,7 +20,5 @@ function o.write(self, section, value)
     value = value:gsub("\r\n?", "\n")
     fs.writefile(USER_FILE_PATH, value)
 end
-
-f.submit = translate("Submit")
 
 return f
