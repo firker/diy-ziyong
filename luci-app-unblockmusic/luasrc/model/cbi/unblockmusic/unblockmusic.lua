@@ -62,7 +62,7 @@ replace_music_source:value("320000", translate("当音质低于 320 Kbps（高�
 replace_music_source:value("600000", translate("当音质低于 999 Kbps（无损）时"))
 replace_music_source.description = translate("当音乐音质低于指定数值时，尝试强制使用其他平台的高音质版本进行替换")
 replace_music_source.default = "0"
-replace_music_source.rmempty = false
+-- replace_music_source.rmempty = false
 replace_music_source:depends("apptype", "nodejs")
 
 local_vip = s:option(Flag, "local_vip", translate("启用本地 VIP"))
