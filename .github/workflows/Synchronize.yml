@@ -46,7 +46,7 @@ jobs:
           rm -rf ./luci-app-cpulimit/.svn        
           rm -rf ./luci-app-onliner/.svn
           rm -rf ./cpulimit/.svn
-         rm -rf ./luci-app-autotimeset/.git
+          rm -rf ./luci-app-autotimeset/.git
       - name: Push Commits
         run : |
           cd diy-ziyong
