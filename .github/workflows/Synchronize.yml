@@ -33,6 +33,8 @@ jobs:
           rm -rf ./cpulimit        
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
+          rm -rf ./luci-app-autotimeset
+          git clone https://github.com/sirpdboy/luci-app-autotimeset
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
@@ -44,6 +46,7 @@ jobs:
           rm -rf ./luci-app-cpulimit/.svn        
           rm -rf ./luci-app-onliner/.svn
           rm -rf ./cpulimit/.svn
+         rm -rf ./luci-app-autotimeset/.git
       - name: Push Commits
         run : |
           cd diy-ziyong
