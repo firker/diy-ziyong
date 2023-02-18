@@ -33,19 +33,22 @@ jobs:
           rm -rf ./cpulimit        
           rm -rf ./luci-app-cpulimit        
           rm -rf ./luci-app-onliner
+          rm -rf ./smartdns
           
           svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
           svn co https://github.com/haiibo/openwrt-packages/trunk/cpulimit
           svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-cpulimit
-          svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner        
+          svn co https://github.com/haiibo/openwrt-packages/trunk/luci-app-onliner
+          git clone https://github.com/pymumu/openwrt-smartdns.git smartdns
           sed -i 's/默认用户名密码都是root/默认用户名密码都是AdGuardHome/g' ./adguardhome/patches/default_username.patch       
-          curl -fsSL  https://raw.githubusercontent.com/kiddin9/openwrt-packages/master/smartdns/Makefile > ./smartdns/Makefile
+          
           rm -rf ./adguardhome/.svn         
           rm -rf ./adguardhome/patches/000-quic-go-1.18-fix.patch
           rm -rf ./luci-app-cpulimit/.svn        
           rm -rf ./luci-app-onliner/.svn
           rm -rf ./cpulimit/.svn
-
+          rm -rf ./smartdns/.git
+          
       - name: Push Commits
         run : |
           cd diy-ziyong
