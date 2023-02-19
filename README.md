@@ -24,4 +24,5 @@ VSSR-jerryk https://github.com/jerrykuku/openwrt-package
 ```git clone https://github.com/firker/diy-ziyong.git package/diy-ziyong```
 
 ```sed -i '$a src-git diy https://github.com/firker/diy-ziyong' feeds.conf.default```
+
 Thanks！
