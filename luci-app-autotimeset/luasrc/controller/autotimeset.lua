@@ -1,4 +1,4 @@
-module("luci.systemler.autotimeset",package.seeall)
+module("luci.controller.autotimeset",package.seeall)
 function index()
 	if not nixio.fs.access("/etc/config/autotimeset") then
 		return
