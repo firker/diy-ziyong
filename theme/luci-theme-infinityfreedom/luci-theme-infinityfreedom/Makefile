@@ -1,16 +1,17 @@
-# LuCI Material Theme
-# Copyright 2015 Lutty Yang <lutty@wcan.in>
+# LuCI Theme Infinity Freedom
+# Copyright 2020 Richard Yu <xiaoqingfengatgm@gmail.com>
 #
 # Licensed under the Apache License v2.0
 # http://www.apache.org/licenses/LICENSE-2.0
 
 include $(TOPDIR)/rules.mk
 
-THEME_NAME:=atmaterial
-THEME_TITLE:=ATMaterial
+THEME_NAME:=infinityfreedom
+THEME_TITLE:=infinityfreedom
 
 PKG_NAME:=luci-theme-$(THEME_NAME)
-PKG_VERSION:=0.2.18
+PKG_VERSION:=1.5.20220504
+
 PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
@@ -20,8 +21,8 @@ define Package/luci-theme-$(THEME_NAME)
   CATEGORY:=LuCI
   SUBMENU:=4. Themes
   DEPENDS:=+libc
-  TITLE:=Advanced Tomato Material
-  URL:=http://wcan.in/
+  TITLE:=Infinity Freedom Theme
+  URL:=https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
   PKGARCH:=all
 endef
 
@@ -33,7 +34,7 @@ endef
 
 define Package/luci-theme-$(THEME_NAME)/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/30_luci-theme-$(THEME_NAME) $(1)/etc/uci-defaults/luci-theme-$(THEME_NAME)	
+	$(INSTALL_BIN) ./files/10_luci-theme-$(THEME_NAME) $(1)/etc/uci-defaults/luci-theme-$(THEME_NAME)	
 	$(INSTALL_DIR) $(1)/www/luci-static/$(THEME_NAME)
 	$(CP) -a ./files/htdocs/* $(1)/www/luci-static/$(THEME_NAME)/ 2>/dev/null || true
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/view/themes/$(THEME_NAME)
