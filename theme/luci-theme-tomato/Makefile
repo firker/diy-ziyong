@@ -1,12 +1,12 @@
+# LuCI Material Theme
+# Copyright 2015 Lutty Yang <lutty@wcan.in>
 #
-# Copyright (C) 2008-2014 The LuCI Team <luci@lists.subsignal.org>
-#
-# This is free software, licensed under the Apache License, Version 2.0 .
-#
+# Licensed under the Apache License v2.0
+# http://www.apache.org/licenses/LICENSE-2.0
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Tomato Theme
+LUCI_TITLE:=OpenTomato Theme
 LUCI_DEPENDS:=
 
 include $(TOPDIR)/feeds/luci/luci.mk

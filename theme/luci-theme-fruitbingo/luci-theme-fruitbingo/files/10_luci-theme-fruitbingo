@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.fruitbingo=/luci-static/fruitbingo
+	set luci.main.mediaurlbase=/luci-static/fruitbingo
+	commit luci
+EOF
+exit 0
