@@ -737,8 +737,7 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
     padding: 12px;
     line-height: 1.42857143;
     border-top: 1px dashed #EEE;
-
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .cbi-section-table-cell {
@@ -746,7 +745,7 @@ table > tbody > tr > td, table > tbody > tr > th, table > tfoot > tr > td, table
 }
 
 .cbi-section-table-row {
-    text-align: left;
+    text-align: center;
 }
 
 fieldset > table > tbody > tr:nth-of-type(odd),

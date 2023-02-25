@@ -122,15 +122,6 @@ div{
     font-family: 'HYk2gj';
 }
 
-::-webkit-scrollbar {
-    width: 4px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--scrollbarColor) ;
-    border-radius: 2px;
-}
-
-
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -754,7 +745,7 @@ img[src*="/luci-static/resources/icons/loading.gif"] {
     padding: 0 0 0 22px !important;
 }
 .ifacebox-head {
-    /* background-color: #1096db !important; */
+    background-color: #337ab7 !important;
     border-radius: 4px 4px 0 0;
 }
 
@@ -1643,6 +1634,7 @@ td#__status-ifc-signal {
     min-width: 80px;
     padding: 0px 8px 0px 8px;
     max-width: 160px;
+    border-radius: 8px;
     height: 35px;
     line-height: 35px;
 }
@@ -1698,8 +1690,8 @@ form.inline + form.inline,
 .cbi-input-reload,
 .cbi-button-reload {
     color: var(--bttextColor);
-    background-color: rgb(0,171,232) !important;
-    border-color: rgb(0,171,232) !important;
+    background-color: #337ab7 !important;
+    border-color: #337ab7 !important;
 }
 
 .cbi-button-link:hover,
@@ -1711,9 +1703,10 @@ form.inline + form.inline,
 .cbi-input-reload:hover,
 .cbi-button-reload:hover{
     color: #fff !important;
-    background-color: #337ab7 !important;
-    border-color: #337ab7 !important;
+    background-color: #6A82AE!important;
+    border-color: #6A82AE !important;
 }
+
 
 .cbi-input-apply,
 .cbi-button-apply,
@@ -3185,11 +3178,6 @@ body.lang_pl.node-main-login .cbi-value-title {
     display: unset !important;
 }
 
-.node-nlbw-usage table {
-    display: block;
-    overflow: auto;
-}
-
 /* fix node-status-realtime */
 .node-status-realtime .container {
     overflow:auto
@@ -3223,4 +3211,28 @@ form[action="/cgi-bin/luci/admin/network/wireless_join"] input[class="cbi-button
 .node-services-ddns .cbi-value input[type="password"],
 .node-services-ddns .cbi-value input[type="text"] {
     width: 100% !important;
+}
+
+/* fix luci-app-fileassistant botton style */
+.fb-container .cbi-button {
+    border-radius: 8px;
+    margin: 3px 3px 3px 0;
+    height: unset !important;
+}
+
+/* fix luci-app-appfilter table overflow style */
+.node-services-appfilter .cbi-section.cbi-tblsection {
+    overflow: auto;
+}
+
+/* update node-system-commands style */
+.node-system-commands h3 {
+    text-transform: unset;
+}
+.node-system-commands .commandbox {
+    margin: 10px;
+}
+.node-system-commands .commandbox p {
+    word-break:keep-all;
+    white-space:nowrap;
 }
