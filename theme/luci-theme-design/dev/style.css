@@ -283,7 +283,7 @@ header, .main {
 
 header {
     background-color: var(--bgwhite);
-    box-shadow: 17rem 2px 4px rgba(0, 0, 0, 0.08);
+    box-shadow: 18rem 2px 4px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.1s;
     height: 55px;
     float: left;
@@ -375,13 +375,6 @@ label.zonebadge{
 svg {
     background-color: var(--sectionbgColor);
 }
-
-/* fix p#aliyundrive-webdav_status b */
-
-/* p#aliyundrive-webdav_status b {
-    color: #ff6666 !important;
-    text-transform:capitalize;
-} */
 
 /* fix .cbi-section .cbi-section */
 .cbi-section .cbi-section {
@@ -1084,7 +1077,7 @@ img[src*="/luci-static/resources/icons/signal-none.png"]
 
 .main-left {
     float: left;
-    width: 17rem;
+    width: 18rem;
     background-color: var(--mainleftbgColor);
     overflow-x: auto;
     height: calc(100% - 3.5rem);
@@ -1096,7 +1089,7 @@ img[src*="/luci-static/resources/icons/signal-none.png"]
 
 .main-right {
     width: 85%;
-    width: calc(100% - 17rem);
+    width: calc(100% - 18rem);
     float: right;
     height: 100%;
     border-left: var(--sectionBorder);
@@ -1132,13 +1125,15 @@ header > .container > .brand {
     cursor: default;
     /*background: #51c291;*/
     display:block;
-    width:17rem;
+    width:18rem;
     /* padding-left: 30px; */
     height:60px;
     text-align:center;
     float:left;
     font-weight:900;
     letter-spacing:1px;
+    padding: 0 4.5rem;
+    transition: 0.1s ease-in-out;
 }
 header > .container > a[class="brand"]:after {
     content:"";
@@ -1155,7 +1150,7 @@ header > .container > .brand-hostname {
     color: #555555;
     cursor: default;
     display:block;
-    width:17rem;
+    width:18rem;
     padding-right: 10px;
     height:60px;
     text-align:left;
@@ -1424,7 +1419,7 @@ p#shadowsocksr_status {
     text-transform: capitalize;
     font-size: 1rem;
     margin: 0.1rem 0.5rem 0.1rem 0.5rem;
-    padding: 0.675rem 0 0.675rem 2.5rem;
+    padding: 0.675rem 0 0.675rem 3.2rem;
 }
 .main .main-left .nav li.slide .slide-menu .active a {
     color: #000;
@@ -1935,8 +1930,8 @@ form.inline + form.inline,
 }
 
 .cbi-tabmenu > li[class~="cbi-tab"] a {
-    color: var(--activeColor) ;
-    border-bottom: 2px solid var(--activeColor);
+    color: var(--activeColor) !important;
+    border-bottom: 2px solid var(--activeColor) !important;
 }
 
 .cbi-section-node-tabbed {
@@ -2390,12 +2385,12 @@ header > .container > .pull-right > * {
 }
 
 #xhr_poll_status > .label.success {
-    padding: 10px 0;
+    padding: 0.7rem 0;
     border-radius: 20px;
 }
 
 #xhr_poll_status_off {
-    padding: 10px 0;
+    padding: 0.7rem 0;
     border-radius: 20px;
 }
 
@@ -2410,13 +2405,15 @@ header > .container > .pull-right > * {
 }
 
 .notice {
-    background-color: var(--activeColor);
-    color: #fff;
+    color: var(--activeColor);
     font-size: .8rem;
-    padding: 2.8px 10px;
+    /* padding: 0.15rem; */
+    padding-right: 0.5rem;
     border-radius: 10px;
     z-index: 10;
-    top: 22px;
+    /* top: 1.45rem; */
+    font-size: 1.8rem;
+    font-family: design;
 }
 
 #refresh_on, #refresh_off {
@@ -2751,12 +2748,12 @@ body.lang_pl.node-main-login .cbi-value-title {
     }
 
     .main-left {
-        width: calc(0% + 17rem);
+        width: calc(0% + 18rem);
         top: 50px;
     }
 
     .main-right {
-        width: calc(100% - 17rem);
+        width: calc(100% - 18rem);
     }
 
 
@@ -2851,7 +2848,7 @@ body.lang_pl.node-main-login .cbi-value-title {
         position: absolute;
         width: 300px;
         height: 50px;
-        padding: 17px 27px;
+        padding: 1.15rem 2rem;
     }
 
     .showSide:before {
@@ -3028,11 +3025,6 @@ body.lang_pl.node-main-login .cbi-value-title {
     select {
         width: 100%;
     }
-    .label {
-        position: absolute;
-        right: 5px;
-        top: -70px;
-    }
 
     header {
         height: 55px;
@@ -3159,7 +3151,6 @@ body.lang_pl.node-main-login .cbi-value-title {
         width: 65%;
     }
 
-
     h2 {
         font-size: 1.2rem;
         text-transform: capitalize;
@@ -3193,7 +3184,6 @@ body.lang_pl.node-main-login .cbi-value-title {
     #memcache div div,
     #memtotal div div{
     }
-   
 
     .node-status-iptables > .main div > .cbi-map > form input[type="submit"]{
         margin: 0;
@@ -3228,6 +3218,13 @@ body.lang_pl.node-main-login .cbi-value-title {
     }
 }
 
+@media screen and (max-width: 315px) {
+    .label {
+        position: absolute;
+        right: 5px;
+        top: -70px;
+    }
+}
 
 /* fix http://192.168.2.1/cgi-bin/luci/admin/nlbw/usage */
 #intervalSelect {
