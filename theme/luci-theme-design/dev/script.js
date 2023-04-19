@@ -142,9 +142,6 @@
         $("body").addClass(mainNodeName);
     }
     
-    $(".cbi-button-up").val("");
-    $(".cbi-button-down").val("");
-
     /**
      * hook other "A Label" and add hash to it.
      */
@@ -220,14 +217,6 @@
             $("header").css("box-shadow", "18rem 2px 4px rgb(0 0 0 / 8%)")
             $("header>.container>.brand").css("padding", '0rem')
         }
-    });
-   
-    /**
-     * fix legend position
-     */
-    $("legend").each(function () {
-        var that = $(this);
-        that.after("<span class='panel-title'>" + that.text() + "</span>");
     });
 
     $(".main-right").focus();
