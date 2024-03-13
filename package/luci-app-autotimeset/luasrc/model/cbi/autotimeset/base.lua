@@ -11,9 +11,13 @@ s = m:section(TypedSection, 'global')
 s.anonymous=true
 
 e=s:option(TextValue, "customscript" ,translate("Edit Custom Script"))
-e.description = translate("Only by editing the content of the custom script well and scheduling the custom script task can it be executed effectively.")
+e.description = translate("The execution content of the [Scheduled Customscript] in the task name")
 e.rows = 5
-e.default = '#!/bin/sh'
+e.rmempty = false
+
+e=s:option(TextValue, "customscript2" ,translate("Edit Custom Script2"))
+e.description = translate("The execution content of the [Scheduled Customscript2] in the task name")
+e.rows = 5
 e.rmempty = false
 
 s=m:section(TypedSection,"stime","")
@@ -34,6 +38,9 @@ e:value(9,translate("Scheduled DisReconn"))
 e:value(10,translate("Scheduled DisRereboot"))
 e:value(11,translate("Scheduled Restartmwan3"))
 e:value(12,translate("Scheduled Customscript"))
+e:value(13,translate("Scheduled Customscript2"))
+e:value(14,translate("Scheduled Wifiup"))
+e:value(15,translate("Scheduled Wifidown"))
 e.default=2
 
 e=s:option(Flag,"enable",translate("Enable"))
