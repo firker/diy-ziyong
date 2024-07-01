@@ -3,7 +3,7 @@ Advanced Tomato Material Theme for OpenWrt
 
 # 自用版luci-theme-atmaterial
 
-基于luci-theme-atmaterial修改，适配最新lede，修复侧边栏文字大小不一,优化适配系统进程页面布局
+基于luci-theme-atmaterial修改，适配最新lede，修复侧边栏文字大小不一
 
 # Screenshot
 ![image](https://github.com/uparrows/luci-theme-atmaterial/blob/main/screenshot/01.jpg)
